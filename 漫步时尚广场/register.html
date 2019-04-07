@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/menu.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/copyright.css">
+    <link rel="stylesheet" href="./css/logo.css">
+    <link rel="stylesheet" href="./css/cascade.css">
+    <title>用户注册-Q-Walking E&S</title>
+</head>
+
+<body>
+    <!-- 顶部区域 start -->
+    <div class="top_nav_father">
+        <div class="top_nav">
+            <ul class="nav_left">
+                <li class="nav china">
+                    <span class="china">中国大陆</span>
+                    <span class="bg_pic dsj_pic"></span>
+                </li>
+                <li class="nav login">
+                    <a href="./manageadmin/login.html" class="login">亲，请登录</a>
+                    <a href="./register/Register.html">免费注册</a>
+                </li>
+                <li class="nav">
+                    <a href="#">手机逛</a>
+                </li>
+            </ul>
+            <ul class="nav_right">
+                <li class="nav">
+                    <a href="#">
+                        <span class="bg_pic shop_car_pic"></span> 我的购物车
+                        <span class="shop_car_num">0</span>件
+                        <span class="bg_pic dsj_pic"></span>
+                    </a>
+                </li>
+                <li class="nav">
+                    <a href="#">
+                        <span class="bg_pic like_pic"></span> 收藏夹
+                        <span class="bg_pic dsj_pic"></span>
+                    </a>
+                </li>
+                <li class="nav">
+                    <a href="#">联系客服</a>
+                    <span class="bg_pic dsj_pic"></span>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- 顶部区域 end -->
+    <!-- logo 和 banner start -->
+    <div class="lb">
+        <div class="lb_son">
+            <div class="logo">
+                <a href="./index.html">
+                    <img src="./images/logo.png" alt="">
+                </a>
+            </div>
+            <div class="banner">
+                <img src="./images/header1.jpg" width="1000px" height="66px" style="opacity: 0.4;" alt="">
+            </div>
+        </div>
+    </div>
+    <!-- logo 和 banner end -->
+    <!-- 菜单导航 start -->
+    <div class="nav_bg">
+        <div class="nav_content">
+            <ul class="nav">
+                <li><a href="shoppingIndex.html" class="white"> 首页</a></li>
+                <li><a href="shoppingShow.html" class="white"> 最新上架</a></li>
+                <li>品牌活动</li>
+                <li>原厂直供</li>
+                <li>团购</li>
+                <li>限时抢购</li>
+                <li>促销打折</li>
+            </ul>
+        </div>
+    </div>
+    <!-- 菜单导航 end -->
+    <!-- 注册部分start -->
+    <div class="user-zc">
+        <div class="bac-img"></div>
+        <div class="zhuce-title">
+            <span class="user"><h2>用户注册</h2>
+            <hr /></span>
+        </div>
+        <form action="#" method="POST" enctype="multipart/form-data" class="sign-in">
+            <table>
+                <tr>
+                    <td class="text"><span class="red">*</span> 用户名:</td>
+                    <td>
+                        <input type="text" maxlength="40" value="请输入用户名" onfocus="if(this.value=='请输入用户名'){this.value='';}" onblur="if(this.value==''){this.value='请输入用户名';}" autocomplete="off" name="userName" id="userName" class="userName">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="text"><span class="red">*</span>邮箱地址:</td>
+                    <td>
+                        <input type="text" maxlength="40" value="请输入邮箱地址" onfocus="if(this.value=='请输入邮箱地址'){this.value='';}" onblur="if(this.value==''){this.value='请输入邮箱地址';}" autocomplete="off" name="email" id="email">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="text"><span class="red">*</span>设置密码:</td>
+                    <td><input type="password" name="userPwd" id="userPwd"></td>
+                </tr>
+                <tr>
+                    <td class="text">&nbsp;</td>
+                    <td class="gray12">6-12个字符,由字母、数字和符号的两种以上组合.&nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="text"><span class="red">*</span>确认密码:</td>
+                    <td><input type="password" name="userRePwd" id="userRePwd"></td>
+                </tr>
+                <tr>
+                    <td class="text"><span class="red">*</span>真实姓名:</td>
+                    <td>
+                        <input type="text" maxlength="40" value="请输入真实姓名" onfocus="if(this.value=='请输入真实姓名'){this.value='';}" onblur="if(this.value==''){this.value='请输入真实姓名';}" autocomplete="off" name="realName" id="realName">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="text"><span class="red">*</span>您的性别:</td>
+                    <td><input type="radio" name="sex" value="radio" checked />男
+                        <input type="radio" name="sex" value="radio" />女
+                    </td>
+                </tr>
+                <tr>
+                    <td class="text"><span class="red">*</span>上传头像:</td>
+                    <td><input type="file" name="headPic" id="headPic" style="cursor: pointer; width: 70px; border: none;" /></td>
+                </tr>
+                <tr>
+                    <td class="text"><span class="red">*</span>您的手机:</td>
+                    <td>
+                        <input type="text" maxlength="40" value="请输入您的手机号" onfocus="if(this.value=='请输入您的手机号'){this.value='';}" onblur="if(this.value==''){this.value='请输入您的手机号';}" autocomplete="off" name="mobile" id="mobile">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="text">单位名称:</td>
+                    <td>
+                        <input type="text" maxlength="40" value="请输入单位名称" onfocus="if(this.value=='请输入单位名称'){this.value='';}" onblur="if(this.value==''){this.value='请输入单位名称';}" autocomplete="off" name="company" id="company">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="text">单位地址:</td>
+                    <td>
+                        <select name="province" id="province">
+                        <option value="">请选择省份</option>
+                    </select>
+                        <select name="city" id="city">
+                        <option value="">请选择城市</option>
+                    </select>
+                        <select name="area" id="area">
+                        <option value="">请选择地区</option>
+                    </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="text">&nbsp;</td>
+                    <td><input type="text" maxlength="40" value="请输入街道地址" onfocus="if(this.value=='请输入街道地址'){this.value='';}" onblur="if(this.value==''){this.value='请输入街道地址';}" autocomplete="off"></td>
+                </tr>
+                <tr>
+                    <td class="text">您的爱好:</td>
+                    <td><input type="checkbox" name="hobby" id="" value="购物">购物
+                        <input type="checkbox" name="hobby" id="" value="影视">影视
+                        <input type="checkbox" name="hobby" id="" value="餐饮">餐饮</td>
+                </tr>
+                <tr>
+                    <td class="text">协议内容:</td>
+                    <td><textarea name="" id="" cols="30" rows="3"></textarea></td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td><input type="submit" name="button" value="提交" class="submit"></td>
+                </tr>
+            </table>
+        </form>
+        <script src="./js/city.js"></script>
+        <script src="./js/cascade.js"></script>
+        <script src="./js/validate.js"></script>
+        <!-- 三大模块图片  -->
+
+    </div>
+    <!-- 注册部分end -->
+    <!-- 页面版权区域 start -->
+    <div class="foot_line">
+        <p class="padding-top">
+            天猫为第三方交易平台及互联网信息服务提供者，天猫（含网站、客户端等）所展示的商品/服务的标题、价格、详情等信息内容系由店铺经营者发布，其真实性、准确性和合法性均由店铺经营者负责。天猫提醒用户购买商品/服务前注意谨慎核实。如用户对商品/服务的标题、价格、详情等任何信息有任何疑问的，请在购买前通过阿里旺旺与店铺经营者沟通确认；天猫存在海量店铺，如用户发现店铺内有任何违法/侵权信息，请立即向天猫举报并提供有效线索。
+        </p>
+        <p><img src="./images/foot_pic.jpg" alt=""></p>
+        <div class="clear"></div>
+    </div>
+    <!-- 页面版权区域 end -->
+</body>
+
+</html>

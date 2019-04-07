@@ -1,0 +1,121 @@
+/* foot */
+.footer::before{
+    content: "";
+    display: inline-block;
+    clear: both;
+}
+.footer {
+    width: 1200px;
+    margin: 0 auto;
+    background: #efefef;
+    height: 230px;
+    margin-top: 15px;
+    
+}
+
+.footer .end {
+    height: 50px;
+    background-color: #f4f4f4;
+    position: relative;
+}
+
+.footer .end .over {
+    display: inline-block;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    color: #ccccd0;
+}
+
+.footer .end .over::before {
+    content: ' ';
+    position: absolute;
+    height: 0;
+    line-height: 0;
+    border-top: 1px solid #e6e6e6;
+    width: 60px;
+    top: 50%;
+    margin-left: -72px;
+}
+
+.footer .end .over::after {
+    content: ' ';
+    position: absolute;
+    height: 0;
+    line-height: 0;
+    border-top: 1px solid #e6e6e6;
+    width: 60px;
+    top: 50%;
+    margin-left: 11px;
+}
+
+.footer .gray {
+    background: #6a6665;
+    width: 100%;
+    height: 38px;
+    /* padding-top: 8px; */
+    /* position: relative; */
+}
+
+.footer .gray img {
+    height: 20px;
+    margin-left: 120px;
+    padding-top: 8px;
+}
+
+.footer .gray .gray-nav .gray-content {
+    margin-left: 8px;
+    color: #cdcdcd;
+}
+
+.foot_line {
+    border-bottom: 1px solid #ccc;
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.footer_list {
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 8px;
+    height: 123px;
+    border-bottom: 1px solid #ccc;
+    /* background-color: #ddd; */
+}
+
+.footer_list .list {
+    float: left;
+    width: 140px;
+    height: 122px;
+    border-left: 1px solid #ccc;
+    margin-left: 40px;
+    padding-left: 13px;
+    position: relative;
+}
+
+.footer_list .list img {
+    width: 26px;
+    height: 26px;
+    position: absolute;
+    top: -5px;
+    left: -15px;
+}
+
+.footer_list .list li {
+    font-size: 13px;
+}
+
+.footer_list .list .font16 {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.footer_list .list .padding-bottom {
+    display: inline-block;
+    padding-bottom: 8px;
+}
+
+.padding-top {
+    padding-top: 10px;
+}

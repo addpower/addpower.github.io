@@ -1,0 +1,15 @@
+.foot_line {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.foot_line .padding-top {
+    padding-top: 8px;
+    font-size: 12px;
+    color: #8b8b8b;
+}
+
+.foot_line p img {
+    width: 1200px;
+    margin-bottom: 20px;
+}

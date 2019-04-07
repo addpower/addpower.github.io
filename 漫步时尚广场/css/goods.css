@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+li,
+ul {
+    list-style: none;
+}
+
+body {
+    font-size: 12px;
+    font-family: microsoft yahei;
+    margin: 0;
+    color: #000;
+}
+
+.main-father {
+    width: 1200px;
+    margin: 0 auto;
+    margin-top: 8px;
+}
+
+.middle {
+    float: left;
+    width: 760px;
+    height: 860px;
+    /* margin: 0 auto; */
+    /* margin-left: 210px; */
+}
+
+.middle::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.pic_list {
+    float: left;
+}
+
+.pic_list dl {
+    float: left;
+    width: 170px;
+    margin: 0 10px 10px;
+}
+
+.price {
+    font-size: 15px;
+    font-weight: 700;
+    color: red;
+    float: left;
+}
+
+.price2 {
+    font-size: 12px;
+    font-weight: 700;
+    color: red;
+    text-align: center;
+}
+
+.font12 {
+    font-size: 12px;
+    color: #ccc;
+    float: right;
+}
+
+.pic_list dl img {
+    padding: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    width: 150px;
+    height: 175px;
+}
+
+.pic_list dl dd {
+    float: left;
+}
+
+.pic_list dl dd span {
+    display: inline-block;
+    width: 152px;
+    height: 32px;
+    overflow: hidden;
+}
+
+.pic_title {
+    background-color: #ff9c01;
+    line-height: 40px;
+    font-size: 16px;
+    text-indent: 20px;
+    text-align: left;
+    width: 753px;
+    float: left;
+    color: #fff;
+    margin: 0 10px 10px;
+}
+
+.pic_list2 {
+    margin: 0 6px 0 12px;
+}
+
+.pic_list2 p {
+    display: inline-block;
+    width: 152px;
+    height: 32px;
+    overflow: hidden;
+}
+
+.pic_list2 img {
+    width: 160px;
+    height: 180px;
+}
+
+.pic_list2 li {
+    width: 177px;
+    float: left;
+    margin: 5px 4px;
+}
+
+.right {
+    float: right;
+    position: relative;
+    width: 240px;
+    height: 272px;
+    border: 1px solid #ccc;
+    /* border: 1px solid #000; */
+}
+
+.right .hot_title {
+    background-color: #EAE3E3;
+    line-height: 40px;
+    font-size: 15px;
+    font-weight: 700;
+    text-indent: 20px;
+    text-align: left;
+    width: 240px;
+    float: left;
+    color: #000;
+    /* border: 1px solid #333; */
+    /* margin: 0 10px 10px; */
+}
+
+.right .hot_list li {
+    float: left;
+    width: 70px;
+    height: 70px;
+    margin: 3px;
+}
+
+.right .hot_list li img {
+    width: 74px;
+    height: 57px;
+    border: 1px solid #ccc;
+}
+
+.right .hot_list li p {
+    text-align: right;
+    font-size: 10px;
+}

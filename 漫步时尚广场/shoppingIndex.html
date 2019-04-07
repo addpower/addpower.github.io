@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>漫步时尚广场-购物栏目</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./css/menu.css">
+    <link rel="stylesheet" href="./css/copyright.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/logo.css">
+    <link rel="stylesheet" href="./css/footer.css">
+</head>
+
+<body>
+    <!-- 顶部区域 start -->
+    <div class="top_nav_father">
+        <div class="top_nav">
+            <ul class="nav_left">
+                <li class="nav china">
+                    <span class="china">中国大陆</span>
+                    <span class="bg_pic dsj_pic"></span>
+                </li>
+                <li class="nav login">
+                    <a href="./manageadmin/login.html" class="login">亲，请登录</a>
+                    <a href="./register/Register.html">免费注册</a>
+                </li>
+                <li class="nav">
+                    <a href="#">手机逛</a>
+                </li>
+            </ul>
+            <ul class="nav_right">
+                <li class="nav">
+                    <a href="#">
+                        <span class="bg_pic shop_car_pic"></span> 我的购物车
+                        <span class="shop_car_num">0</span>件
+                        <span class="bg_pic dsj_pic"></span>
+                    </a>
+                </li>
+                <li class="nav">
+                    <a href="#">
+                        <span class="bg_pic like_pic"></span> 收藏夹
+                        <span class="bg_pic dsj_pic"></span>
+                    </a>
+                </li>
+                <li class="nav">
+                    <a href="#">联系客服</a>
+                    <span class="bg_pic dsj_pic"></span>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- 顶部区域 end -->
+    <!-- logo 和 banner start -->
+    <div class="lb">
+        <div class="lb_son">
+            <div class="logo">
+                <a href="./index.html">
+                    <img src="./images/logo.png" alt="">
+                </a>
+            </div>
+            <div class="banner">
+                <img src="./images/header1.jpg" width="1000px" height="66px" style="opacity: 0.4;" alt="">
+            </div>
+        </div>
+    </div>
+    <!-- logo 和 banner end -->
+    <!-- 菜单导航 start -->
+    <div class="nav_bg">
+        <div class="nav_content">
+            <ul class="nav">
+                <li class="nav_active"><a href="shoppingIndex.html" class="white"> 首页</a></li>
+                <li><a href="shoppingShow.html" class="white"> 最新上架</a></li>
+                <li>品牌活动</li>
+                <li>原厂直供</li>
+                <li>团购</li>
+                <li>限时抢购</li>
+                <li>促销打折</li>
+            </ul>
+        </div>
+    </div>
+    <!-- 菜单导航 end -->
+    <!-- 中间部分 start -->
+    <div class="Index_main">
+        <!-- 购物分类 start -->
+        <div class="menu">
+            <ul class="menu_list">
+                <li><span class="title">女装</span></li>
+                <li><span class="red_dot"></span><a href="#">上衣</a><span class="right_arrow"></spancla></li>
+                 <li><span class="red_dot"></span><a href="#">下装</a><span class="right_arrow"></span></li>
+                <li><span class="red_dot"></span><a href="#">连衣裙</a><span class="right_arrow"></span></li>
+                <li><span class="red_dot"></span><a href="#">内衣</a><span class="right_arrow"></span></li>
+                <li><span class="title">男装</span></li>
+                <li><span class="red_dot"></span><a href="#">T恤</a><span class="right_arrow"></span></li>
+                <li><span class="red_dot"></span><a href="#">短裤</a><span class="right_arrow"></span></li>
+                <li><span class="red_dot"></span><a href="#">衬衫</a><span class="right_arrow"></span></li>
+                <li><span class="title">童装</span></li>
+                <li><span class="red_dot"></span><a href="#">上衣</a><span class="right_arrow"></span></li>
+                <li><span class="red_dot"></span><a href="#">裤子</a><span class="right_arrow"></span></li>
+                <li><span class="title">运动</span></li>
+                <li><span class="red_dot"></span><a href="#">运动裤</a><span class="right_arrow"></span></li>
+                <li><span class="red_dot"></span><a href="#">跑步鞋</a><span class="right_arrow"></span></li>
+            </ul>
+        </div>
+        <!-- 购物分类 end -->
+        <!-- 推荐区 start -->
+        <!-- <div class="caramel">
+            <img src="./images/index/pic1.jpg" alt="无" class="img">
+            <ul class="focusBox">
+                <li onclick="showPic(1)"></li>
+                <li onclick="showPic(2)"></li>
+                <li onclick="showPic(3)"></li>
+            </ul>
+            <script src="./js/pictureSlide.js"></script>
+        </div> -->
+        <div class="container">
+            <div class="list" style="left:-718px;">
+                <img src="./images/index/images/img5.png" alt="">
+                <img src="./images/index/images/img1.png" alt="">
+                <img src="./images/index/images/img2.png" alt="">
+                <img src="./images/index/images/img3.png" alt="">
+                <img src="./images/index/images/img4.png" alt="">
+                <img src="./images/index/images/img5.png" alt="">
+                <img src="./images/index/images/img1.png" alt="">
+            </div>
+            <ul>
+                <li index="1" class="on"></li>
+                <li index="2" class=""></li>
+                <li index="3" class=""></li>
+                <li index="4" class=""></li>
+                <li index="5" class=""></li>
+            </ul>
+            <a href="javascript:;" class="next">&gt;</a>
+            <a href="javascript:;" class="prev">&lt;</a>
+            <script src="./js/pictureSlide.js"></script>
+        </div>
+        <!-- 推荐区 end -->
+        <!-- 右侧 start -->
+        <div class="right_nav">
+            <!-- 公告区 start -->
+            <div class="notice">
+                <ul>
+                    <li class="notice_title">公告</li>
+                    <li class="notice_text"><span class="point"></span>淘宝公益平台正式更名</li>
+                    <li class="notice_text"><span class="point"></span>益起来上家招募即将截止</li>
+                    <li class="notice_text"><span class="point"></span>卖家如何设置公益宝贝</li>
+                    <li class="notice_text"><span class="point"></span>公益机构开店全攻略</li>
+                    <li class="notice_text"><span class="point"></span>全球奢侈品品牌上天猫</li>
+                    <li class="notice_text"><span class="point"></span>老字号在天猫成新网红</li>
+                </ul>
+            </div>
+            <!-- 公告区 end -->
+            <!-- 品牌推荐区 start -->
+            <div class="brand">
+                <ul>
+                    <li><img src="./images/index/link1.png" alt=""></li>
+                    <li><img src="./images/index/link2.png" alt=""></li>
+                    <li><img src="./images/index/link3.png" alt=""></li>
+                    <li><img src="./images/index/link4.png" alt=""></li>
+                    <li><img src="./images/index/link5.png" alt=""></li>
+                    <li><img src="./images/index/link6.png" alt=""></li>
+                    <li><img src="./images/index/link7.png" alt=""></li>
+                    <li><img src="./images/index/link8.png" alt=""></li>
+                    <li><img src="./images/index/link9.png" alt=""></li>
+                </ul>
+            </div>
+            <!-- 品牌推荐区 end -->
+        </div>
+        <!-- 右侧 end -->
+        <!-- 产品分类区 start -->
+        <div class="class_nav">
+            <div class="class1">
+                <div class="font14">
+                    <img src="./images/class1.jpg" alt="">
+                    <span class="font14_title">
+                        热门品类
+                        <br/>护肤彩妆启示
+                    </span>
+                </div>
+                <ul>
+                    <li>洗护套装&nbsp;&nbsp;面部精华&nbsp;&nbsp;香水</li>
+                    <li>粉底液&nbsp;&nbsp;面霜&nbsp;&nbsp;洁面</li>
+                    <li>美容工具&nbsp;&nbsp;复方精油&nbsp;&nbsp;洗发水</li>
+                </ul>
+            </div>
+            <div class="class1">
+                <div class="font14">
+                    <img src="./images/class2.jpg" alt="">
+                    <span class="font14_title">
+                        强效保养
+                    <br/>逆转皮肤问题
+                    </span>
+                </div>
+                <ul>
+                    <li>隔离&nbsp;&nbsp;保湿&nbsp;&nbsp;补水&nbsp;&nbsp;清洁</li>
+                    <li>清爽&nbsp;&nbsp;排毒&nbsp;&nbsp;去角质</li>
+                    <li>美白&nbsp;&nbsp;祛痘&nbsp;&nbsp;收缩毛孔&nbsp;&nbsp;紧质</li>
+                </ul>
+            </div>
+            <div class="class1">
+                <div class="font14">
+                    <img src="./images/class3.png" alt="">
+                    <span class="font14_title">
+                        人气品牌
+                    <br/>最IN大牌
+                </span>
+                </div>
+                <ul>
+                    <li>薇姿&nbsp;&nbsp;欧莱雅&nbsp;&nbsp;美容莲</li>
+                    <li>SK-II&nbsp;&nbsp;百雀羚&nbsp;&nbsp;雅顿</li>
+                    <li>美即&nbsp;&nbsp;迷尚&nbsp;&nbsp;妮维雅</li>
+                </ul>
+            </div>
+            <div class="class1 ">
+                <div class="font14">
+                    <img src="./images/class4.png" alt="">
+                    <span class="font14_title">
+                        潮流单品
+                    <br/>当季最红
+                    </span>
+                </div>
+                <ul>
+                    <li>奶浴奶膏&nbsp;&nbsp;补水凝胶</li>
+                    <li>防装生发液&nbsp;&nbsp;假发片&nbsp;&nbsp;香水</li>
+                    <li>艾米尔彩妆&nbsp;&nbsp;丰胸美乳霜</li>
+                </ul>
+            </div>
+            <div style="border:none;" class="class1">
+                <div class="font14">
+                    <img src="./images/class5.jpg" alt="">
+                    <span class="font14_title">
+                        美妆精选
+                    <br/>超赞专题
+                    </span>
+                </div>
+                <ul>
+                    <li>孕妇护肤&nbsp;&nbsp;护季保养</li>
+                    <li>护肤嫩白集锦&nbsp;&nbsp;快速约会妆</li>
+                    <li>美容时钟模式&nbsp;&nbsp;旅行5秒护肤术/li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 产品分类区 end -->
+    </div>
+    <!-- 中间部分 end -->
+    <!-- 底部 start -->
+    <div class="footer">
+        <div class="end">
+            <span class="over">END</span>
+        </div>
+        <div class="gray">
+            <div class="gray-nav">
+                <img src="./images/正品.png" alt=""><span class="gray-content">正品保障</span>
+                <img src="./images/送货.png" alt=""><span class="gray-content">即买即送</span>
+                <img src="./images/付款.png" alt=""><span class="gray-content">货到付款</span>
+                <img src="./images/发票.png" alt=""><span class="gray-content">正规发票</span>
+                <img src="./images/保障.png" alt=""><span class="gray-content">全国联保</span>
+            </div>
+        </div>
+        <div class="footer_list">
+            <div class="list">
+
+                <ul>
+                    <li><span class="font16 padding-bottom"><img src="./images/赞.png" alt="">新手引导</span></li>
+                    <li>用户注册</li>
+                    <li>电话下单</li>
+                    <li>购物流程</li>
+                    <li>购物保障</li>
+                    <li>服务协议</li>
+                </ul>
+            </div>
+            <div class="list">
+                <ul>
+                    <li><span class="font16 padding-bottom"><img src="./images/支付.png" alt="">支付方式 </span></li>
+                    <li>货到付款</li>
+                    <li>商城卡支付</li>
+                    <li>支付宝 网银支付</li>
+                    <li>优惠券抵用</li>
+                </ul>
+            </div>
+            <div class="list">
+                <ul>
+                    <li><span class="font16 padding-bottom"><img src="./images/配送.png" alt="">配送方式 </span></li>
+                    <li>闪电发货</li>
+                    <li>满百包邮</li>
+                    <li>配送范围及时间</li>
+                    <li>商品验收及签收</li>
+                    <li>服务协议</li>
+                </ul>
+            </div>
+            <div class="list">
+                <ul>
+                    <li><span class="font16 padding-bottom"><img src="./images/售后.png" alt="">售后服务 </span></li>
+                    <li>退换货协议</li>
+                    <li>关于发货</li>
+                    <li>退换货流程</li>
+                    <li>退换货运费</li>
+                </ul>
+            </div>
+            <div class="list">
+                <ul>
+                    <li><span class="font16 padding-bottom"><img src="./images/锁.png" alt="">关于账号 </span></li>
+                    <li>修改个人信息</li>
+                    <li>修改密码</li>
+                    <li>找回密码</li>
+                </ul>
+            </div>
+            <div class="list">
+                <ul>
+                    <li><span class="font16 padding-bottom"><img src="./images/优惠.png" alt="">优惠活动 </span></li>
+                    <li>竞拍须知</li>
+                    <li>抢购须知</li>
+                </ul>
+            </div>
+        </div>
+        <!-- 页面版权区域 start -->
+        <div class="foot_line">
+            <p class="padding-top">
+                天猫为第三方交易平台及互联网信息服务提供者，天猫（含网站、客户端等）所展示的商品/服务的标题、价格、详情等信息内容系由店铺经营者发布，其真实性、准确性和合法性均由店铺经营者负责。天猫提醒用户购买商品/服务前注意谨慎核实。如用户对商品/服务的标题、价格、详情等任何信息有任何疑问的，请在购买前通过阿里旺旺与店铺经营者沟通确认；天猫存在海量店铺，如用户发现店铺内有任何违法/侵权信息，请立即向天猫举报并提供有效线索。
+            </p>
+            <p><img src="./images/foot_pic.jpg" alt=""></p>
+            <div class="clear"></div>
+        </div>
+        <!-- 页面版权区域 end -->
+    </div>
+    <!-- 底部 end -->
+</body>
+
+</html>

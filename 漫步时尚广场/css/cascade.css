@@ -1,0 +1,94 @@
+.user-zc {
+    width: 1200px;
+    height: 706px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.user-zc .bac-img {
+    width: 500px;
+    height: 500px;
+    float: right;
+    position: absolute;
+    right: 300px;
+    top: 50%;
+    margin-top: -250px;
+    background-image: url(../images/logo.png);
+    background-size: 100%;
+    opacity: 0.3;
+}
+
+.zhuce-title {
+    height: 70px;
+    width: 800px;
+}
+
+.zhuce-title .user h2 {
+    text-align: center;
+    line-height: 70px;
+}
+
+.zhuce-title .user hr {
+    width: 90%;
+    text-align: center;
+    margin-left: 18px;
+    background-color: #000;
+}
+
+.user-zc .sign-in {
+    width: 800px;
+    height: 600px;
+    margin-top: 10px;
+    margin-left: 18px;
+}
+
+.user-zc .sign-in td>input,
+.user-zc .sign-in td>select {
+    border: 1px solid rgb(26, 184, 229);
+    margin-left: 18px;
+    margin-top: 6px;
+    height: 22px;
+}
+
+.user-zc .sign-in td>textarea {
+    border: 1px solid rgb(26, 184, 229);
+    margin-left: 18px;
+    margin-top: 6px;
+    height: 80px;
+    resize: none;
+    outline: none;
+}
+
+.user-zc .sign-in tr {
+    height: 22px;
+}
+
+.user-zc .sign-in .text {
+    font-size: 14px;
+    line-height: 22px;
+    text-align: right;
+    width: 68px;
+}
+
+.user-zc .sign-in .gray12 {
+    margin-left: 18px;
+    font-size: 14px;
+    line-height: 22px;
+    display: block;
+    color: #f60;
+}
+
+.user-zc .sign-in .text .red {
+    color: red;
+    font-size: 18px;
+    vertical-align: middle;
+}
+
+.user-zc .sign-in td input.submit {
+    width: 100px;
+    height: 37px;
+    background-color: rgb(26, 184, 229);
+    border: none;
+    color: #fff;
+    border-radius: 9px;
+}
