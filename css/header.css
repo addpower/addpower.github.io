@@ -12,14 +12,6 @@
     margin: 0 auto;
 }
 
-.top_nav_father .top_nav .nav_left {
-    float: left;
-}
-
-.top_nav_father .top_nav .nav_right {
-    float: right;
-}
-
 .top_nav_father .top_nav ul li {
     display: inline-block;
     margin-right: 7px;
