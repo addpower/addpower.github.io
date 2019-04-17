@@ -7,7 +7,7 @@
     grid-template-columns: 240px auto 360px;
 }
 
-.index_main .menu {
+.index_main .menu { 
     width: 230px;
     border: 1px solid #000;
 }
