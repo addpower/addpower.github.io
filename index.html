@@ -18,7 +18,7 @@
 <body>
     <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
     <script>
-        window.onload = function () {
+        $(function(){
             $('.title').click(function () {
                 if ($(this).parent().find('i').hasClass('down')) {
                     $(this).parent().find('i').removeClass('down');
@@ -29,7 +29,9 @@
                 $(this).parent().parent().find('.red_dot').toggleClass('block');
 
             })
-             }
+
+        })
+             
     </script>
     <!-- 顶部区域 start -->
     <div class="top_nav_father">
