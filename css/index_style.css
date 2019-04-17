@@ -9,7 +9,7 @@
 
 .index_main .menu { 
     width: 230px;
-    border: 1px solid #000;
+    /* border: 1px solid #000; */
 }
 
 .index_main .menu .menu_list {}
