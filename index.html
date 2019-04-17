@@ -14,6 +14,21 @@
     <link rel="stylesheet" href="css/copyright.css">
     <link rel="stylesheet" href="css/footer.css">
     <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script>
+        $(function () {
+
+            $('.title').click(function () {
+                if ($(this).parent().find('i').hasClass('down')) {
+                    $(this).parent().find('i').removeClass('down');
+                    $(this).parent().find('i').addClass('right');
+                } else {
+                    $(this).parent().find('.right').toggleClass('down');
+                }
+                $(this).parent().parent().find('.red_dot').toggleClass('block');
+
+            })
+        })
+    </script>
 </head>
 
 <body>
@@ -112,21 +127,7 @@
                 <li class="red_dot"><a href="#">跑步鞋</a></li>
             </ul>
         </div>
-        <script>
-            $(function () {
 
-                $('.title').click(function () {
-                    if ($(this).parent().find('i').hasClass('down')) {
-                        $(this).parent().find('i').removeClass('down');
-                        $(this).parent().find('i').addClass('right');
-                    } else {
-                        $(this).parent().find('.right').toggleClass('down');
-                    }
-                    $(this).parent().parent().find('.red_dot').toggleClass('block');
-
-                })
-            })
-        </script>
         <!-- 购物分类 end -->
         <!-- 推荐区 start -->
         <!-- <div class="caramel">
