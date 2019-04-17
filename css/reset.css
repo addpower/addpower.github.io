@@ -146,9 +146,9 @@ table {
 }
 
 .block {
-    display: block;
+    display: block !important;
 }
 
 .inline {
-    display: inline;
+    display: inline !important;
 }

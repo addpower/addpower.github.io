@@ -38,16 +38,16 @@
 
 .top_nav_father .bg_pic.dsj_pic {
     display: inline-block;
-    background-image: url('image/jiantou.png');
+    background-image: url('../images/jiantou.png');
     background-size: 100% 100%;
     width: 18px;
     height: 10px;
-    vertical-align: middle
+    vertical-align: 0px;
 }
 
 .top_nav_father .nav_right .bg_pic.shop_car_pic {
     display: inline-block;
-    background-image: url("image/car.png");
+    background-image: url("../images/car.png");
     background-size: 100% 100%;
     width: 20px;
     height: 18px;
@@ -61,7 +61,7 @@
 
 .top_nav_father .nav_right .bg_pic.like_pic {
     display: inline-block;
-    background-image: url("image/star.png");
+    background-image: url("../images/star.png");
     background-size: 100% 100%;
     width: 20px;
     height: 20px;
@@ -70,7 +70,7 @@
 
 .top_nav_father .nav_right .bg_pic.net_pic {
     display: inline-block;
-    background-image: url("image/network.png");
+    background-image: url("../images/network.png");
     background-size: 100% 100%;
     width: 20px;
     height: 13px;

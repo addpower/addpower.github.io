@@ -6,12 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>漫步时尚广场-商品详情</title>
-    <link rel="stylesheet" href="./css/logo.css">
-    <link rel="stylesheet" href="./css/menu.css">
-    <link rel="stylesheet" href="./css/header.css">
-    <link rel="stylesheet" href="./css/footer.css">
-    <link rel="stylesheet" href="./css/copyright.css">
-    <link rel="stylesheet" href="./css/detail.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/logo.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/copyright.css">
+    <link rel="stylesheet" href="css/detail.css">
     <!--[if IE]>
     <script>
         document.createElement("header");
@@ -24,78 +25,72 @@
 
 <body>
     <!-- 顶部区域 start -->
-    <header class="top_bg">
-        <!-- 顶部区域 start -->
-        <div class="top_nav_father">
-            <div class="top_nav">
-                <ul class="nav_left">
-                    <li class="nav china">
-                        <span class="china">中国大陆</span>
+    <div class="top_nav_father">
+        <div class="top_nav">
+            <ul class="nav_left left">
+                <li class="nav china">
+                    <span class="china">中国大陆</span>
+                    <span class="bg_pic dsj_pic"></span>
+                </li>
+                <li class="nav login">
+                    <a href="./manageadmin/login.html" class="login">亲，请登录</a>
+                    <a href="./register/Register.html">免费注册</a>
+                </li>
+                <li class="nav">
+                    <a href="#">手机逛</a>
+                </li>
+            </ul>
+            <ul class="nav_right right">
+                <li class="nav">
+                    <a href="#">
+                        <span class="bg_pic shop_car_pic"></span> 我的购物车
+                        <span class="shop_car_num">0</span>件
                         <span class="bg_pic dsj_pic"></span>
-                    </li>
-                    <li class="nav login">
-                        <a href="./manageadmin/login.html" class="login">亲，请登录</a>
-                        <a href="./register/Register.html">免费注册</a>
-                    </li>
-                    <li class="nav">
-                        <a href="#">手机逛</a>
-                    </li>
-                </ul>
-                <ul class="nav_right">
-                    <li class="nav">
-                        <a href="#">
-                            <span class="bg_pic shop_car_pic"></span> 我的购物车
-                            <span class="shop_car_num">0</span>件
-                            <span class="bg_pic dsj_pic"></span>
-                        </a>
-                    </li>
-                    <li class="nav">
-                        <a href="#">
-                            <span class="bg_pic like_pic"></span> 收藏夹
-                            <span class="bg_pic dsj_pic"></span>
-                        </a>
-                    </li>
-                    <li class="nav">
-                        <a href="#">联系客服</a>
+                    </a>
+                </li>
+                <li class="nav">
+                    <a href="#">
+                        <span class="bg_pic like_pic"></span> 收藏夹
                         <span class="bg_pic dsj_pic"></span>
-                    </li>
-                </ul>
-            </div>
+                    </a>
+                </li>
+                <li class="nav">
+                    <a href="#">联系客服</a>
+                    <span class="bg_pic dsj_pic"></span>
+                </li>
+            </ul>
         </div>
-        <!-- 顶部区域 end -->
-    </header>
+    </div>
     <!-- 顶部区域 end -->
     <!-- logo 和 banner start -->
-    <div class="lb">
-        <div class="lb_son">
-            <div class="logo">
+    <div class="logo">
+        <div class="logo_container">
+            <div class="logo_img">
                 <a href="./index.html">
                     <img src="./images/logo.png" alt="">
                 </a>
             </div>
-            <div class="banner">
-                <img src="./images/header1.jpg" width="1000px" height="66px" style="opacity: 0.4;" alt="">
+            <div class="logo_banner">
+                <img src="./images/header1.jpg" width="1190px" height="66px" style="opacity: 0.4;" alt="">
             </div>
         </div>
     </div>
     <!-- logo 和 banner end -->
-    <!-- 菜单导航栏 start -->
+    <!-- 菜单导航 start -->
     <div class="nav_bg">
         <div class="nav_content">
             <ul class="nav">
-                <li><a href="shoppingIndex.html" class="white">首页</a></li>
-                <li class="nav_active">
-                    <a href="shoppingShow.html" class="white">最新上架</a>
-                </li>
+                <li class="nav_active"><a href="shoppingIndex.html" class="white"> 首页</a></li>
+                <li><a href="shoppingShow.html" class="white"> 最新上架</a></li>
                 <li>品牌活动</li>
                 <li>原厂直供</li>
                 <li>团购</li>
-                <li>限时促销</li>
+                <li>限时抢购</li>
                 <li>促销打折</li>
             </ul>
         </div>
     </div>
-    <!-- 菜单导航栏 end -->
+    <!-- 菜单导航 end -->
     <!-- 中间部分 start -->
     <div class="main">
         <!-- 购物分类 start -->
@@ -144,7 +139,7 @@
                         <li>
                             <span class="goods-list">价格</span>
                             <div class="con">
-                                <i  class="money1">¥</i>
+                                <i class="money1">¥</i>
                                 <i class="lastmon">110.00</i>
                             </div>
                         </li>
@@ -182,11 +177,11 @@
                         <span class="orgin">浙江杭州</span>
                         至
                         <span class="target">甘肃兰州安宁区<a href="javascript:;" class="xsj"></a></span>
-                        
+
                     </div>
                     <div class="dil-mon">
                         <span>快递 免运费<a href="javascript:;" class="xsj"></a></span>
-                        
+
                     </div>
                     <div class="hour">
                         <span>72小时内发货</span>
@@ -310,23 +305,28 @@
                 <h1 class="pic_title">看了又看</h1>
                 <ul>
                     <li>
-                        <img src="./images/showdetail/ss1.jpg" title="文艺男女店男士裤子潮流春季工装裤韩版休闲裤宽松长裤直筒裤男裤" alt="文艺男女店男士裤子潮流春季工装裤韩版休闲裤宽松长裤直筒裤男裤">
+                        <img src="./images/showdetail/ss1.jpg" title="文艺男女店男士裤子潮流春季工装裤韩版休闲裤宽松长裤直筒裤男裤"
+                            alt="文艺男女店男士裤子潮流春季工装裤韩版休闲裤宽松长裤直筒裤男裤">
                         <p>文艺男女店男士裤子潮流春季工装裤韩版休闲裤宽松长裤直筒裤男裤</p>
                     </li>
                     <li>
-                        <img src="./images/showdetail/ss2.jpg" title="文艺男女店男士工装夹克韩版潮流港风假两件拼接外套春季学生上衣" alt="文艺男女店男士工装夹克韩版潮流港风假两件拼接外套春季学生上衣">
+                        <img src="./images/showdetail/ss2.jpg" title="文艺男女店男士工装夹克韩版潮流港风假两件拼接外套春季学生上衣"
+                            alt="文艺男女店男士工装夹克韩版潮流港风假两件拼接外套春季学生上衣">
                         <p>文艺男女店男士工装夹克韩版潮流港风假两件拼接外套春季学生上衣</p>
                     </li>
                     <li>
-                        <img src="./images/showdetail/ss3.jpg" title="棉衣2018春季休闲连帽棉服男士加肥大码胖子宽松外套韩版潮流男装" alt="棉衣2018春季休闲连帽棉服男士加肥大码胖子宽松外套韩版潮流男装">
+                        <img src="./images/showdetail/ss3.jpg" title="棉衣2018春季休闲连帽棉服男士加肥大码胖子宽松外套韩版潮流男装"
+                            alt="棉衣2018春季休闲连帽棉服男士加肥大码胖子宽松外套韩版潮流男装">
                         <p>棉衣2018春季休闲连帽棉服男士加肥大码胖子宽松外套韩版潮流男装</p>
                     </li>
                     <li>
-                        <img src="./images/showdetail/ss4.jpg" title="2019春季新款休闲高帮板鞋男士百搭耐磨运动鞋高邦鞋韩版潮男鞋子" alt="2019春季新款休闲高帮板鞋男士百搭耐磨运动鞋高邦鞋韩版潮男鞋子">
+                        <img src="./images/showdetail/ss4.jpg" title="2019春季新款休闲高帮板鞋男士百搭耐磨运动鞋高邦鞋韩版潮男鞋子"
+                            alt="2019春季新款休闲高帮板鞋男士百搭耐磨运动鞋高邦鞋韩版潮男鞋子">
                         <p>2019春季新款休闲高帮板鞋男士百搭耐磨运动鞋高邦鞋韩版潮男鞋子</p>
                     </li>
                     <li>
-                        <img src="./images/showdetail/ss5.jpg" title="2019春季休闲印花圆领卫衣男士加肥大码胖子宽松外套韩版潮流男装" alt="2019春季休闲印花圆领卫衣男士加肥大码胖子宽松外套韩版潮流男装">
+                        <img src="./images/showdetail/ss5.jpg" title="2019春季休闲印花圆领卫衣男士加肥大码胖子宽松外套韩版潮流男装"
+                            alt="2019春季休闲印花圆领卫衣男士加肥大码胖子宽松外套韩版潮流男装">
                         <p>2019春季休闲印花圆领卫衣男士加肥大码胖子宽松外套韩版潮流男装</p>
                     </li>
                 </ul>

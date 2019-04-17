@@ -73,7 +73,7 @@
     <div class="nav_bg">
         <div class="nav_content">
             <ul class="nav">
-                <li class="nav_active"><a href="shoppingIndex.html" class="white"> 首页</a></li>
+                <li class="nav_active"><a href="index.html" class="white"> 首页</a></li>
                 <li><a href="shoppingShow.html" class="white"> 最新上架</a></li>
                 <li>品牌活动</li>
                 <li>原厂直供</li>
@@ -88,24 +88,43 @@
     <div class="index_main">
         <!-- 购物分类 start -->
         <div class="menu">
-            <ul class="menu_list">
-                <li><span class="title">女装</span></li>
-                <li><span class="red_dot"></span><a href="#">上衣</a><span class="right_arrow"></spancla></li>
-                 <li><span class="red_dot"></span><a href="#">下装</a><span class="right_arrow"></span></li>
-                <li><span class="red_dot"></span><a href="#">连衣裙</a><span class="right_arrow"></span></li>
-                <li><span class="red_dot"></span><a href="#">内衣</a><span class="right_arrow"></span></li>
-                <li><span class="title">男装</span></li>
-                <li><span class="red_dot"></span><a href="#">T恤</a><span class="right_arrow"></span></li>
-                <li><span class="red_dot"></span><a href="#">短裤</a><span class="right_arrow"></span></li>
-                <li><span class="red_dot"></span><a href="#">衬衫</a><span class="right_arrow"></span></li>
-                <li><span class="title">童装</span></li>
-                <li><span class="red_dot"></span><a href="#">上衣</a><span class="right_arrow"></span></li>
-                <li><span class="red_dot"></span><a href="#">裤子</a><span class="right_arrow"></span></li>
-                <li><span class="title">运动</span></li>
-                <li><span class="red_dot"></span><a href="#">运动裤</a><span class="right_arrow"></span></li>
-                <li><span class="red_dot"></span><a href="#">跑步鞋</a><span class="right_arrow"></span></li>
+            <ul class="menu_list girlTitle">
+                <li><span class="block title">女装</span><i class="down"></i></li>
+                <li class="red_dot block"><a href="#">上衣</a></li>
+                <li class="red_dot block"><a href="#">下装</a></li>
+                <li class="red_dot block"><a href="#">连衣裙</a></li>
+                <li class="red_dot block"><a href="#">内衣</a></li>
+            </ul>
+            <ul class="menu_list manTitle">
+                <li><span class="block title">男装</span><i class="right"></i></li>
+                <li class="red_dot"><a href="#">T恤</a></li>
+                <li class="red_dot"><a href="#">短裤</a></li>
+                <li class="red_dot"><a href="#">衬衫</a></li>
+            </ul>
+            <ul class="menu_list childTitle">
+                <li><span class="block title">童装</span><i class="right"></i></li>
+                <li class="red_dot"><a href="#">上衣</a></li>
+                <li class="red_dot"><a href="#">裤子</a></li>
+            </ul>
+            <ul class="menu_list runTitle">
+                <li><span class="block title">运动</span><i class="right"></i></li>
+                <li class="red_dot"><a href="#">运动裤</a></li>
+                <li class="red_dot"><a href="#">跑步鞋</a></li>
             </ul>
         </div>
+        <script>
+            var count = 1;
+            $('.title').click(function () {
+                if ($(this).parent().find('i').hasClass('down')) {
+                    $(this).parent().find('i').removeClass('down');
+                    $(this).parent().find('i').addClass('right');
+                } else {
+                    $(this).parent().find('.right').toggleClass('down');
+                }
+                $(this).parent().parent().find('.red_dot').toggleClass('block');
+
+            })
+        </script>
         <!-- 购物分类 end -->
         <!-- 推荐区 start -->
         <!-- <div class="caramel">
@@ -178,7 +197,7 @@
                     <img src="./images/class1.jpg" alt="">
                     <span class="font14_title">
                         热门品类
-                        <br/>护肤彩妆启示
+                        <br />护肤彩妆启示
                     </span>
                 </div>
                 <ul>
@@ -192,7 +211,7 @@
                     <img src="./images/class2.jpg" alt="">
                     <span class="font14_title">
                         强效保养
-                    <br/>逆转皮肤问题
+                        <br />逆转皮肤问题
                     </span>
                 </div>
                 <ul>
@@ -206,8 +225,8 @@
                     <img src="./images/class3.png" alt="">
                     <span class="font14_title">
                         人气品牌
-                    <br/>最IN大牌
-                </span>
+                        <br />最IN大牌
+                    </span>
                 </div>
                 <ul>
                     <li>薇姿&nbsp;&nbsp;欧莱雅&nbsp;&nbsp;美容莲</li>
@@ -220,7 +239,7 @@
                     <img src="./images/class4.png" alt="">
                     <span class="font14_title">
                         潮流单品
-                    <br/>当季最红
+                        <br />当季最红
                     </span>
                 </div>
                 <ul>
@@ -234,7 +253,7 @@
                     <img src="./images/class5.jpg" alt="">
                     <span class="font14_title">
                         美妆精选
-                    <br/>超赞专题
+                        <br />超赞专题
                     </span>
                 </div>
                 <ul>

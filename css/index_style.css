@@ -1,26 +1,100 @@
-.index_main{
+.index_main {
     width: 1190px;
     margin: 0 auto;
     display: grid;
-            /* width: 100%; */
-            grid-template-rows: auto;
-            grid-template-columns: 240px auto 360px;
-
-
+    /* width: 100%; */
+    grid-template-rows: auto;
+    grid-template-columns: 240px auto 360px;
 }
 
-.index_main .menu{
-    
+.index_main .menu {
     width: 230px;
     border: 1px solid #000;
 }
 
-.index_main .container{
-    
+.index_main .menu .menu_list {}
+
+.index_main .menu .menu_list li {
+    width: 100%;
+    height: 35px;
+    position: relative;
 }
 
-.index_main .right_nav{
-   
+
+.index_main .menu .menu_list li a {
+    float: left;
+    width: 200px;
+    height: 100%;
 }
 
+.index_main .menu .menu_list .title {
+    background-color: #A1A595;
+    width: 100%;
+    height: 35px;
+    text-align: left;
+    line-height: 35px;
+    font-size: 15px;
+    font-weight: 700;
+    font-family: '微软雅黑';
+    text-indent: 1em;
+    cursor: pointer;
+}
 
+.index_main .menu .menu_list .right {
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 14px;
+    height: 18px;
+    background-image: url('../images/right.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.index_main .menu .menu_list .down {
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 18px;
+    height: 14px;
+    background-image: url('../images/down.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.index_main .menu .menu_list .red_dot {
+    /* display: block; */
+    display: none;
+    background-color: #E5F1EC;
+    border-bottom: 1px solid #ccc;
+    width: 100%;
+    height: 35px;
+    line-height: 35px;
+    text-align: left;
+    font-size: 15px;
+    font-family: '微软雅黑';
+    text-indent: 2em;
+}
+
+.index_main .menu .menu_list .red_dot:hover {
+    background-color: #FACEC2;
+}
+
+.index_main .menu .menu_list .red_dot::after {
+    content: "";
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 15px;
+    height: 15px;
+    background-image: url('../images/右.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.index_main .container {}
+
+.index_main .right_nav {}
