@@ -1,0 +1,26 @@
+.index_main{
+    width: 1190px;
+    margin: 0 auto;
+    display: grid;
+            /* width: 100%; */
+            grid-template-rows: auto;
+            grid-template-columns: 240px auto 360px;
+
+
+}
+
+.index_main .menu{
+    
+    width: 230px;
+    border: 1px solid #000;
+}
+
+.index_main .container{
+    
+}
+
+.index_main .right_nav{
+   
+}
+
+
