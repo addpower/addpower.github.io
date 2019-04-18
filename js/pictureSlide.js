@@ -5,9 +5,6 @@ $(function () {
     var len = $('ul.btn li').length;
     var flag = true;
 
-    console.log(len);
-    console.log(ImgWidth);
-
 
     function init() {
         bindEvent();
