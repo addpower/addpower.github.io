@@ -16,25 +16,24 @@
 </head>
 
 <body>
-    <script
-  src="https://code.jquery.com/jquery-1.12.4.min.js"
-  integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
-  crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+        integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
     <script>
-        $(function(){
+        $(function () {
             $('.title').click(function () {
                 if ($(this).parent().find('i').hasClass('down')) {
                     $(this).parent().find('i').removeClass('down');
                     $(this).parent().find('i').addClass('right');
                 } else {
-                    $(this).parent().find('.right').toggleClass('down');
+
+                    $(this).parent().find('i').removeClass('right');
+                    $(this).parent().find('i').addClass('down');
                 }
                 $(this).parent().parent().find('.red_dot').toggleClass('block');
 
             })
 
         })
-             
     </script>
     <!-- 顶部区域 start -->
     <div class="top_nav_father">
@@ -144,24 +143,35 @@
             <script src="./js/pictureSlide.js"></script>
         </div> -->
         <div class="container">
-            <div class="list" style="left:-718px;">
-                <img src="./images/index/images/img5.png" alt="">
-                <img src="./images/index/images/img1.png" alt="">
-                <img src="./images/index/images/img2.png" alt="">
-                <img src="./images/index/images/img3.png" alt="">
-                <img src="./images/index/images/img4.png" alt="">
-                <img src="./images/index/images/img5.png" alt="">
-                <img src="./images/index/images/img1.png" alt="">
-            </div>
-            <ul>
+            <ul class="list">
+                <li>
+                    <img src="./images/index/images/img1.png" alt="">
+                </li>
+                <li>
+                    <img src="./images/index/images/img2.png" alt="">
+                </li>
+                <li>
+                    <img src="./images/index/images/img3.png" alt="">
+             </li>
+                <li>
+                    <img src="./images/index/images/img4.png" alt="">
+                </li>
+                <li>
+                    <img src="./images/index/images/img5.png" alt="">
+                </li>
+                <li>
+                    <img src="./images/index/images/img1.png" alt="">
+                </li>
+            </ul>
+            <ul class="btn">
                 <li index="1" class="on"></li>
                 <li index="2" class=""></li>
                 <li index="3" class=""></li>
                 <li index="4" class=""></li>
                 <li index="5" class=""></li>
             </ul>
-            <a href="javascript:;" class="next">&gt;</a>
-            <a href="javascript:;" class="prev">&lt;</a>
+            <a href="javascript:;" class="next"></a>
+            <a href="javascript:;" class="prev"></a>
             <script src="./js/pictureSlide.js"></script>
         </div>
         <!-- 推荐区 end -->

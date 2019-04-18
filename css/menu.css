@@ -30,9 +30,12 @@
 }
 
 .nav_bg .nav_content .nav li.nav_active {
-    background-color: rgb(216, 60, 88)
+    background-color: rgb(216, 60, 88);
 }
 
+.nav_bg .nav_content .nav li:hover{
+    background-color: rgb(216, 60, 88);
+}
 .nav_bg .nav_content .nav li .white{
     color: #fff;
 }
