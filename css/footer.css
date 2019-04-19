@@ -101,9 +101,19 @@
     top: -5px;
     left: -15px;
 }
-
+.footer_list .list li:first-child{
+    cursor: default;
+}
 .footer_list .list li {
     font-size: 13px;
+    cursor: pointer;
+}
+
+.footer_list .list li:first-child:hover{
+    color: #000;
+}
+.footer_list .list li:hover{
+    color: #e76838;
 }
 
 .footer_list .list .font16 {

@@ -1,0 +1,97 @@
+#mask{
+    background:#424242;
+    opacity:0.75;
+    filter:alpha(opacity=75);
+    height:1000px;
+    width:100%;
+    position:absolute;
+    left:0;
+    top:0;
+    z-index:1000;
+}
+#login{
+    position:absolute;
+    top:300px;
+    left:200px;
+    width:300px;
+    height:auto;
+    border:1px solid #999;
+    background: #f3f6fa;
+    z-index:1001;
+    border-radius: 15px;
+    box-shadow: 2px 2px  5px #999;
+}
+#login .title{
+    position:relative;
+    height:50px;
+    line-height: 50px;
+    font-size:16px;
+    color:#333;
+    padding-left:30px;
+}
+
+#login .title h1{
+    width: 230px;
+    text-align: center;
+}
+#login .close{
+    position:absolute;
+    top:50%;
+    margin-top: -15px;
+    right:10px;
+    width: 20px;
+    height: 20px;
+    background-image: url('../images/关闭.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+#login .content{
+    /* background:#fff; */
+    padding:15px 20px;
+}
+#login .content .user{
+    margin-bottom:15px;
+}
+#login .content .password{
+    margin-bottom:15px;
+}
+#login .content .pt{
+    margin: 0 auto;
+    display:block;
+    height:38px;
+    padding-left:15px;
+    border:1.5px solid #ddd;
+    outline: none;
+    transition:.3s;
+    font-size:14px;
+    color:#666;
+    width:200px;
+
+}
+
+#login .content .pt:focus{
+    border-radius: 25px;
+    border-color: #424242;
+    width: 243px;
+    outline: none;
+}
+
+#login .content .sm{
+    display:block;
+    margin: 0 auto;
+    height:35px;
+    border:1px solid #ddd;
+    transition:.3s;
+    font-size:16px;
+    color:#666;
+    width:170px;
+    background-color: #7ec0e4;
+    color:#fff;
+    border-radius: 15px;
+    outline: none;
+    cursor: pointer;
+}
+
+#login .content .sm:hover{
+    background:#3b7ae3;
+}
