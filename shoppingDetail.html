@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/logo.css">
     <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/menuList.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/copyright.css">
@@ -79,7 +80,7 @@
     <!-- logo 和 banner end -->
     <!-- 菜单导航 start -->
     <div class="nav_bg">
-        <div class="nav_content"> 
+        <div class="nav_content">
             <ul class="nav">
                 <li class="nav_active"><a href="shoppingIndex.html" class="white"> 首页</a></li>
                 <li><a href="shoppingShow.html" class="white"> 最新上架</a></li>
@@ -93,27 +94,34 @@
     </div>
     <!-- 菜单导航 end -->
     <!-- 中间部分 start -->
-    <div class="main">
+    <div class="Detail_main clear clearIe">
         <!-- 购物分类 start -->
-        <div class="menu">
-            <ul class="menu_list">
-                <li><span class="title">女装</span></li>
-                <li><span class="red_dot"></span><a href="#">上衣</a><span class="right_arrow"></spancla>
-                </li>
-                <li><span class="red_dot"></span><a href="#">下装</a><span class="right_arrow"></span></li>
-                <li><span class="red_dot"></span><a href="#">连衣裙</a><span class="right_arrow"></span></li>
-                <li><span class="red_dot"></span><a href="#">内衣</a><span class="right_arrow"></span></li>
-                <li><span class="title">男装</span></li>
-                <li><span class="red_dot"></span><a href="#">T恤</a><span class="right_arrow"></span></li>
-                <li><span class="red_dot"></span><a href="#">短裤</a><span class="right_arrow"></span></li>
-                <li><span class="red_dot"></span><a href="#">衬衫</a><span class="right_arrow"></span></li>
-                <li><span class="title">童装</span></li>
-                <li><span class="red_dot"></span><a href="#">上衣</a><span class="right_arrow"></span></li>
-                <li><span class="red_dot"></span><a href="#">裤子</a><span class="right_arrow"></span></li>
-                <li><span class="title">运动</span></li>
-                <li><span class="red_dot"></span><a href="#">运动裤</a><span class="right_arrow"></span></li>
-                <li><span class="red_dot"></span><a href="#">跑步鞋</a><span class="right_arrow"></span></li>
-            </ul>
+        <div class="left">
+            <div class="menu">
+                <ul class="menu_list girlTitle">
+                    <li><span class="block title">女装</span><i class="down"></i></li>
+                    <li class="red_dot block"><a href="#">上衣</a></li>
+                    <li class="red_dot block"><a href="#">下装</a></li>
+                    <li class="red_dot block"><a href="#">连衣裙</a></li>
+                    <li class="red_dot block"><a href="#">内衣</a></li>
+                </ul>
+                <ul class="menu_list manTitle">
+                    <li><span class="block title">男装</span><i class="right"></i></li>
+                    <li class="red_dot"><a href="#">T恤</a></li>
+                    <li class="red_dot"><a href="#">短裤</a></li>
+                    <li class="red_dot"><a href="#">衬衫</a></li>
+                </ul>
+                <ul class="menu_list childTitle">
+                    <li><span class="block title">童装</span><i class="right"></i></li>
+                    <li class="red_dot"><a href="#">上衣</a></li>
+                    <li class="red_dot"><a href="#">裤子</a></li>
+                </ul>
+                <ul class="menu_list runTitle">
+                    <li><span class="block title">运动</span><i class="right"></i></li>
+                    <li class="red_dot"><a href="#">运动裤</a></li>
+                    <li class="red_dot"><a href="#">跑步鞋</a></li>
+                </ul>
+            </div>
         </div>
         <!-- 购物分类 end -->
         <!-- 中间区域 start -->
@@ -414,7 +422,7 @@
         <!-- 页面版权区域 start -->
         <div class="foot_line">
             <p class="padding-top">
-                天猫为第三方交易平台及互联网信息服务提供者，天猫（含网站、客户端等）所展示的商品/服务的标题、价格、详情等信息内容系由店铺经营者发布，其真实性、准确性和合法性均由店铺经营者负责。天猫提醒用户购买商品/服务前注意谨慎核实。如用户对商品/服务的标题、价格、详情等任何信息有任何疑问的，请在购买前通过阿里旺旺与店铺经营者沟通确认；天猫存在海量店铺，如用户发现店铺内有任何违法/侵权信息，请立即向天猫举报并提供有效线索。
+                广场为第三方交易平台及互联网信息服务提供者，广场（含网站、客户端等）所展示的商品/服务的标题、价格、详情等信息内容系由店铺经营者发布，其真实性、准确性和合法性均由店铺经营者负责。广场提醒用户购买商品/服务前注意谨慎核实。如用户对商品/服务的标题、价格、详情等任何信息有任何疑问的，请在购买前通过阿里旺旺与店铺经营者沟通确认；广场存在海量店铺，如用户发现店铺内有任何违法/侵权信息，请立即向广场举报并提供有效线索。
             </p>
             <p><img src="./images/foot_pic.jpg" alt=""></p>
             <div class="clear"></div>
@@ -422,7 +430,9 @@
         <!-- 页面版权区域 end -->
     </div>
     <!-- 底部 end -->
-
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+        integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <script src="./js/menuList.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,130 @@
+
+.menu {
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid #000; */
+}
+
+.menu .menu_list li {
+    width: 100%;
+    height: 35px;
+    position: relative;
+}
+
+
+.menu .menu_list li a {
+    float: left;
+    width: 200px;
+    height: 100%;
+}
+
+.menu .menu_list .title {
+    background-color: #A1A595;
+    width: 100%;
+    height: 35px;
+    text-align: left;
+    line-height: 35px;
+    font-size: 15px;
+    font-weight: 700;
+    font-family: '微软雅黑';
+    text-indent: 1em;
+    cursor: pointer;
+}
+
+.menu .menu_list .right {
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    margin-top: -9px;
+    width: 14px;
+    height: 18px;
+    background-image: url('../images/right.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    transform: rotateZ(0deg);
+    -ms-transform: rotateZ(0deg);
+    /* IE 9 */
+    -moz-transform: rotateZ(0deg);
+    /* Firefox */
+    -webkit-transform: rotateZ(0deg);
+    /* Safari 和 Chrome */
+    -o-transform: rotateZ(0deg);
+    /* Opera */
+    transition: 0.3s;
+    -moz-transition: 0.3s;
+    /* Firefox 4 */
+    -webkit-transition: 0.3s;
+    /* Safari 和 Chrome */
+    -o-transition: 0.3s;
+    /* Opera */
+}
+
+.menu .menu_list .down {
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    margin-top: -7px;
+    width: 18px;
+    height: 14px;
+    background-image: url('../images/right.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    transform: rotateZ(90deg);
+    -ms-transform: rotateZ(90deg);
+    /* IE 9 */
+    -moz-transform: rotateZ(90deg);
+    /* Firefox */
+    -webkit-transform: rotateZ(90deg);
+    /* Safari 和 Chrome */
+    -o-transform: rotateZ(90deg);
+    /* Opera */
+    transition: 0.3s;
+    -moz-transition: 0.3s;
+    /* Firefox 4 */
+    -webkit-transition: 0.3s;
+    /* Safari 和 Chrome */
+    -o-transition: 0.3s;
+    /* Opera */
+}
+
+.menu .menu_list .red_dot {
+    /* display: block; */
+    display: none;
+    background-color: #E5F1EC;
+    border-bottom: 1px solid #ccc;
+    width: 100%;
+    height: 35px;
+    line-height: 35px;
+    text-align: left;
+    font-size: 15px;
+    font-family: '微软雅黑';
+    text-indent: 2em;
+}
+
+.menu .menu_list .red_dot:hover {
+    background-color: #FACEC2;
+}
+
+.menu .menu_list .red_dot::before{
+    content: "";
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    margin-top: -3px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: red;
+}
+.menu .menu_list .red_dot::after {
+    content: "";
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    margin-top: -7px;
+    width: 15px;
+    height: 15px;
+    background-image: url('../images/右.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+}

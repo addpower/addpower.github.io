@@ -3,6 +3,8 @@
     height: 42px;
     background: linear-gradient(to right,  #FF4466 0%,#F37380 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FF4466', endColorstr='#F37380',GradientType=0 );
+    margin-bottom: 8px;
+    box-shadow: 0 2px 10px 0 rgba(0,0,0,.4);
 }
 
 .nav_bg .nav_content{

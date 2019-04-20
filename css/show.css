@@ -1,23 +1,10 @@
-.top_bg>.top_nav_father>.top_nav>.nav_right>.dropdown {
-    position: relative;
-    /* border: 1px solid #000; */
-    display: inline-block;
-    height: 30px;
-    padding-left: 5px;
-    z-index: 1000;
+.Show_main{
+    width: 1190px;
+    margin: 0 auto;
+    background-color: #fff;
 }
 
-.top_bg>.top_nav_father>.top_nav>.nav_right>.dropdown1 {
-    display: inline-block;
-    background: #fff;
-    width: 185px;
-    height: 255px;
-    border: 1px solid #ccc;
-    padding: 5px;
-    position: absolute;
-    right: 188px;
-    z-index: 999;
-    overflow-y: auto;
-    overflow-x: hidden;
-    float: left;
+.Show_main .left{
+    width: 230px;
+    height: 536px;
 }

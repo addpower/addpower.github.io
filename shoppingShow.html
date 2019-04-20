@@ -14,9 +14,11 @@
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/logo.css">
     <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/menuList.css">
     <link rel="stylesheet" href="css/goods.css">
     <link rel="stylesheet" href="css/copyright.css">
     <link rel="stylesheet" href="css/show.css">
+    <link rel="stylesheet" href="css/footer.css">
     <title>漫步时尚广场E&amp;S</title>
 </head>
 
@@ -24,7 +26,7 @@
     <!-- 顶部区域 start -->
     <div class="top_nav_father">
         <div class="top_nav">
-            <ul class="nav_left left"> 
+            <ul class="nav_left left">
                 <li class="nav china">
                     <span class="china">中国大陆</span>
                     <span class="bg_pic dsj_pic"></span>
@@ -89,108 +91,93 @@
     </div>
     <!-- 菜单导航 end -->
     <!-- 主体区 start -->
-    <div class="main-father">
+    <div class="Show_main clear clearIe">
         <!-- 购物分类 start -->
-        <div class="menu">
-            <ul class="menu_list">
-                <li><span class="title">女装</span></li>
-                <li><span class="red_dot"></span><a href="#">上衣</a><span class="right_arrow"></spancla>
-                </li>
-                <li><span class="red_dot"></span><a href="#">下装</a><span class="right_arrow"></span></li>
-                <li><span class="red_dot"></span><a href="#">连衣裙</a><span class="right_arrow"></span></li>
-                <li><span class="red_dot"></span><a href="#">内衣</a><span class="right_arrow"></span></li>
-                <li><span class="title">男装</span></li>
-                <li><span class="red_dot"></span><a href="#">T恤</a><span class="right_arrow"></span></li>
-                <li><span class="red_dot"></span><a href="#">短裤</a><span class="right_arrow"></span></li>
-                <li><span class="red_dot"></span><a href="#">衬衫</a><span class="right_arrow"></span></li>
-                <li><span class="title">童装</span></li>
-                <li><span class="red_dot"></span><a href="#">上衣</a><span class="right_arrow"></span></li>
-                <li><span class="red_dot"></span><a href="#">裤子</a><span class="right_arrow"></span></li>
-                <li><span class="title">运动</span></li>
-                <li><span class="red_dot"></span><a href="#">运动裤</a><span class="right_arrow"></span></li>
-                <li><span class="red_dot"></span><a href="#">跑步鞋</a><span class="right_arrow"></span></li>
-            </ul>
+        <div class="left">
+            <div class="menu">
+                <ul class="menu_list girlTitle">
+                    <li><span class="block title">女装</span><i class="down"></i></li>
+                    <li class="red_dot block"><a href="#">上衣</a></li>
+                    <li class="red_dot block"><a href="#">下装</a></li>
+                    <li class="red_dot block"><a href="#">连衣裙</a></li>
+                    <li class="red_dot block"><a href="#">内衣</a></li>
+                </ul>
+                <ul class="menu_list manTitle">
+                    <li><span class="block title">男装</span><i class="right"></i></li>
+                    <li class="red_dot"><a href="#">T恤</a></li>
+                    <li class="red_dot"><a href="#">短裤</a></li>
+                    <li class="red_dot"><a href="#">衬衫</a></li>
+                </ul>
+                <ul class="menu_list childTitle">
+                    <li><span class="block title">童装</span><i class="right"></i></li>
+                    <li class="red_dot"><a href="#">上衣</a></li>
+                    <li class="red_dot"><a href="#">裤子</a></li>
+                </ul>
+                <ul class="menu_list runTitle">
+                    <li><span class="block title">运动</span><i class="right"></i></li>
+                    <li class="red_dot"><a href="#">运动裤</a></li>
+                    <li class="red_dot"><a href="#">跑步鞋</a></li>
+                </ul>
+            </div>
         </div>
         <!-- 购物分类 end -->
 
         <!-- 中间区 start -->
-        <div class="middle">
+        <div class="middle clear clearIe">
             <h1 class="pic_title">最新上架</h1>
             <div class="pic_list">
-                <!-- <script>
-                    var images = ["yifu1.png", "yifu2.png", "yifu3.png", "yifu4.png", "yifu5.png", "yifu6.png", "yifu7.png", "yifu8.png", ];
-                    var prices = ["139.00", "128.00", "160.00", "229.02", "128.00", "125.10", "168.00", "358.00", ];
-                    var buyers = [749, 646, 634, 65, 54, 107, 101, 43];
-                    var contents = ["【梗豆物语】19年春上新 独家原创 圆领加厚麻花纯棉针织开衫毛衣",
-                        "【梗豆物语】春上新 原创*豆蔻*JK制服百褶裙 学院风少女百搭格裙",
-                        "Annomundi春上新手工丝带西装领短款毛衣外套女独特撞色锁边原创",
-                        "Paperlll春上新高腰宽松显高阔腿裤懒人贴腰封萝卜裤百搭拖地长裤",
-                        "19春上新韩版加大码女装复古v领抹胸气质中长款连衣裙200斤大摆裙",
-                        "韩范19春上新加大码女装胖mm显瘦睫毛蕾丝网纱拼接连衣裙女吊带裙",
-                        "2019春上新复古拼色韩版中长款套头连帽针织衫宽松慵懒风毛衣裙女",
-                        "Annomundi2019年春上新重工明线A字裙女高腰显瘦黑色半身裙原创款",
-                    ];
-                    for (var i = 0; i < images.length; i++) {
-                        var goodsInfo = "<dl draggable="true"><div><img src = './images/" +
-                            images[i] + "'/></div><dt><span class = 'price'>¥" +
-                            prices[i] + "元</span><span class = 'font12'>" +
-                            buyers[i] + "人购买</span></dt><dd><span>" +
-                            contents[i] + "</span></dd></dl>";
-                        document.write(goodsInfo);
-                    }
-                </script> -->
-                <dl draggable="true">
+                <dl>
                     <div>
-                        <a href="shoppingDetail.html" target="_blank"><img src="./images/yifu1.png" alt=""></a>
+                        <a href="shoppingDetail.html" target="_blank"><img src="./images/showdetail/dd1.jpg" alt=""></a>
                     </div>
-                    <dt><span class="price">¥ 139.00</span>
+                    <dt><span class="price">¥ 88.00</span>
                         <span class="font12">749人购买</span>
                     </dt>
-                    <dd><span>【梗豆物语】19年春上新 独家原创 圆领加厚麻花纯棉针织开衫毛衣</span></dd>
+                    <dd><span>ins复古衬衫男ulzzangbf原宿风港风韩版潮流宽松韩风chic外套学生</span></dd>
                 </dl>
-                <dl draggable="true">
+                <dl>
                     <div> <img src="./images/yifu2.png" alt=""> </div>
                     <dt><span class="price">¥ 128.00</span>
                         <span class="font12">646人购买</span>
                     </dt>
                     <dd><span>【梗豆物语】春上新 原创*豆蔻*JK制服百褶裙 学院风少女百搭格裙</span></dd>
                 </dl>
-                <dl draggable="true">
+                <dl>
                     <div> <img src="./images/yifu3.png" alt=""> </div>
                     <dt><span class="price">¥ 160.00</span>
                         <span class="font12">634 人购买</span>
                     </dt>
                     <dd><span>Annomundi春上新手工丝带西装领短款毛衣外套女独特撞色锁边原创</span></dd>
                 </dl>
-                <dl draggable="true">
+                <dl>
                     <div> <img src="./images/yifu4.png" alt=""> </div>
                     <dt><span class="price">¥ 229.02</span>
                         <span class="font12">65人购买</span>
                     </dt>
                     <dd><span>Paperlll春上新高腰宽松显高阔腿裤懒人贴腰封萝卜裤百搭拖地长裤</span></dd>
                 </dl>
-                <dl draggable="true">
+                <dl>
                     <div> <img src="./images/yifu5.png" alt=""> </div>
                     <dt><span class="price">¥ 128.00</span>
                         <span class="font12">54 人购买</span>
                     </dt>
                     <dd><span>19春上新韩版加大码女装复古v领抹胸气质中长款连衣裙200斤大摆裙</span></dd>
                 </dl>
-                <dl draggable="true">
+                <dl>
                     <div> <img src="./images/yifu6.png" alt=""> </div>
                     <dt><span class="price">¥ 125.10</span>
                         <span class="font12">107人购买</span>
                     </dt>
                     <dd><span>韩范19春上新加大码女装胖mm显瘦睫毛蕾丝网纱拼接连衣裙女吊带裙</span></dd>
                 </dl>
-                <dl draggable="true">
+                <dl>
                     <div> <img src="./images/yifu7.png" alt=""> </div>
                     <dt><span class="price">¥ 168.00</span>
                         <span class="font12">101人购买</span>
                     </dt>
                     <dd><span>2019春上新复古拼色韩版中长款套头连帽针织衫宽松慵懒风毛衣裙女</span></dd>
                 </dl>
-                <dl draggable="true">
+                <dl>
                     <div> <img src="./images/yifu8.png" alt=""> </div>
                     <dt><span class="price">¥ 358.00</span>
                         <span class="font12">43人购买</span>
@@ -225,7 +212,7 @@
         <!-- 中间区 end -->
         <!-- 右部区域 start -->
         <div class="right">
-            <!-- <h1 class="hot_title">热门推荐</h1>
+            <h1 class="hot_title">看了又看</h1>
             <ul class="hot_list">
                 <li>
                     <img src="./images/dress1.jpg" alt="">
@@ -247,36 +234,96 @@
                     <img src="./images/dress3.jpg" alt="">
                     <p>¥ 168.00</p>
                 </li>
-                <li>
-                    <img src="./images/dress4.jpg" alt="">
-                    <p>¥ 168.00</p>
-                </li>
-                <li>
-                    <img src="./images/dress3.jpg" alt="">
-                    <p>¥ 168.00</p>
-                </li>
-                <li>
-                    <img src="./images/dress4.jpg" alt="">
-                    <p>¥ 168.00</p>
-                </li>
-                <li>
-                    <img src="./images/dress4.jpg" alt="">
-                    <p>¥ 168.00</p>
-                </li>
-            </ul> -->
+            </ul>
         </div>
         <!-- 右部区域 end -->
     </div>
     <!-- 主体区 end -->
-    <!-- 页面版权区域 start -->
-    <div class="foot_line">
-        <p class="padding-top">
-            天猫为第三方交易平台及互联网信息服务提供者，天猫（含网站、客户端等）所展示的商品/服务的标题、价格、详情等信息内容系由店铺经营者发布，其真实性、准确性和合法性均由店铺经营者负责。天猫提醒用户购买商品/服务前注意谨慎核实。如用户对商品/服务的标题、价格、详情等任何信息有任何疑问的，请在购买前通过阿里旺旺与店铺经营者沟通确认；天猫存在海量店铺，如用户发现店铺内有任何违法/侵权信息，请立即向天猫举报并提供有效线索。
-        </p>
-        <p><img src="./images/foot_pic.jpg" alt=""></p>
-        <div class="clear"></div>
+
+    <!-- 底部区域 start -->
+    <div class="footer">
+        <div class="end">
+            <span class="over">END</span>
+        </div>
+        <div class="gray">
+            <div class="gray-nav">
+                <img src="./images/正品.png" alt=""><span class="gray-content">正品保障</span>
+                <img src="./images/送货.png" alt=""><span class="gray-content">即买即送</span>
+                <img src="./images/付款.png" alt=""><span class="gray-content">货到付款</span>
+                <img src="./images/发票.png" alt=""><span class="gray-content">正规发票</span>
+                <img src="./images/保障.png" alt=""><span class="gray-content">全国联保</span>
+            </div>
+        </div>
+        <div class="footer_list">
+            <div class="list">
+                <ul>
+                    <li><span class="font16 padding-bottom"><img src="./images/赞.png" alt="">新手引导</span></li>
+                    <li>用户注册</li>
+                    <li>电话下单</li>
+                    <li>购物流程</li>
+                    <li>购物保障</li>
+                    <li>服务协议</li>
+                </ul>
+            </div>
+            <div class="list">
+                <ul>
+                    <li><span class="font16 padding-bottom"><img src="./images/支付.png" alt="">支付方式 </span></li>
+                    <li>货到付款</li>
+                    <li>商城卡支付</li>
+                    <li>支付宝 网银支付</li>
+                    <li>优惠券抵用</li>
+                </ul>
+            </div>
+            <div class="list">
+                <ul>
+                    <li><span class="font16 padding-bottom"><img src="./images/配送.png" alt="">配送方式 </span></li>
+                    <li>闪电发货</li>
+                    <li>满百包邮</li>
+                    <li>配送范围及时间</li>
+                    <li>商品验收及签收</li>
+                    <li>服务协议</li>
+                </ul>
+            </div>
+            <div class="list">
+                <ul>
+                    <li><span class="font16 padding-bottom"><img src="./images/售后.png" alt="">售后服务 </span></li>
+                    <li>退换货协议</li>
+                    <li>关于发货</li>
+                    <li>退换货流程</li>
+                    <li>退换货运费</li>
+                </ul>
+            </div>
+            <div class="list">
+                <ul>
+                    <li><span class="font16 padding-bottom"><img src="./images/锁.png" alt="">关于账号 </span></li>
+                    <li>修改个人信息</li>
+                    <li>修改密码</li>
+                    <li>找回密码</li>
+                </ul>
+            </div>
+            <div class="list">
+                <ul>
+                    <li><span class="font16 padding-bottom"><img src="./images/优惠.png" alt="">优惠活动 </span></li>
+                    <li>竞拍须知</li>
+                    <li>抢购须知</li>
+                </ul>
+            </div>
+        </div>
+        <!-- 页面版权区域 start -->
+        <div class="foot_line">
+            <p class="padding-top">
+                广场为第三方交易平台及互联网信息服务提供者，广场（含网站、客户端等）所展示的商品/服务的标题、价格、详情等信息内容系由店铺经营者发布，其真实性、准确性和合法性均由店铺经营者负责。广场提醒用户购买商品/服务前注意谨慎核实。如用户对商品/服务的标题、价格、详情等任何信息有任何疑问的，请在购买前通过阿里旺旺与店铺经营者沟通确认；广场存在海量店铺，如用户发现店铺内有任何违法/侵权信息，请立即向广场举报并提供有效线索。
+            </p>
+            <p><img src="./images/foot_pic.jpg" alt=""></p>
+            <div class="clear"></div>
+        </div>
+        <!-- 页面版权区域 end -->
+        <!-- 底部区域 end -->
+
     </div>
-    <!-- 页面版权区域 end -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+        integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <script src="./js/menuList.js"></script>
 </body>
 
 </html>
