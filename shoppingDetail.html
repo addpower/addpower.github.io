@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/copyright.css">
     <link rel="stylesheet" href="css/detail.css">
+    <link rel="stylesheet" href="css/login.css">
     <!--[if IE]>
     <script>
         document.createElement("header");
@@ -35,7 +36,7 @@
                     <span class="bg_pic dsj_pic"></span>
                 </li>
                 <li class="nav login">
-                    <a href="./manageadmin/login.html" class="login">亲，请登录</a>
+                    <a href="javascript:;" class="login">亲，请登录</a>
                     <a href="./register/Register.html">免费注册</a>
                 </li>
                 <li class="nav">
@@ -127,77 +128,105 @@
         <!-- 中间区域 start -->
         <div class="middle">
             <h1 class="pic_title">商品详情</h1>
-            <!-- 缺少放大镜效果 -->
-            <div class="left_pic">
-                <div class="box">
-                    <img src="./images/showdetail/dd2.jpg" width="360" height="360" alt="">
-                    <div class="move"></div>
-                </div>
-                <ul class="small_piclist" id="goodsList">
-                    <li><img src="./images/showdetail/dd1.jpg" alt=""></li>
-                    <li><img src="./images/showdetail/dd2.jpg" alt=""></li>
-                    <li><img src="./images/showdetail/dd3.jpg" alt=""></li>
-                    <li><img src="./images/showdetail/dd4.jpg" alt=""></li>
-                    <li><img src="./images/showdetail/dd5.jpg" alt=""></li>
-                </ul>
-            </div>
-            <div class="right_pic">
-                <img src="./images/showdetail/dd1.jpg" alt="">
-            </div>
-            <div class="right">
-                <h1 class="font16">ins复古衬衫男ulzzangbf原宿风港风韩版潮流宽松韩风chic外套学生
-                </h1>
-                <div class="mon">
-                    <ul>
-                        <li>
-                            <span class="goods-list">价格</span>
-                            <div class="con">
-                                <i class="money1">¥</i>
-                                <i class="lastmon">110.00</i>
-                            </div>
-                        </li>
-                        <li>
-                            <span class="goods-list">淘宝价</span>
-                            <div class="con">
-                                <i class="money2">¥</i>
-                                <i class="nowmon">88.00</i>
-                                <i class="hotshop">火热促销</i>
-                            </div>
-                        </li>
-                        <li>
-                            <span class="goods-list">优惠</span>
-                            <div class="con" style="width: 130px;margin-right: 0;">
-                                <i class="taomon"></i>
-                                <i class="taomoncon">淘金币可抵4.40元</i>
-                            </div>
-                        </li>
+            <div class="middle_top">
+                <div class="left_pic">
+                    <div class="box">
+                        <img src="./images/showdetail/dd1.jpg" width="360" height="360" alt="">
+                        <div class="move"></div>
+                    </div>
+                    <ul class="small_piclist" id="goodsList">
+                        <li><img src="./images/showdetail/dd1.jpg" alt=""></li>
+                        <li><img src="./images/showdetail/dd2.jpg" alt=""></li>
+                        <li><img src="./images/showdetail/dd3.jpg" alt=""></li>
+                        <li><img src="./images/showdetail/dd4.jpg" alt=""></li>
+                        <li><img src="./images/showdetail/dd5.jpg" alt=""></li>
                     </ul>
-                    <div class="sum-com">
-                        <a href="">5</a>
-                        <span>累计评论</span>
-                    </div>
-
-                    <div class="sum-shop">
-                        <a href="">
-                            <span style="font-size: 16px;">1</span>
-                            <span>交易成功</span>
-                        </a>
-                    </div>
                 </div>
-                <div class="dil">
-                    <span class="goods-list">配送</span>
-                    <div class="address">
-                        <span class="orgin">浙江杭州</span>
-                        至
-                        <span class="target">甘肃兰州安宁区<a href="javascript:;" class="xsj"></a></span>
+                <div class="right_pic">
+                    <img src="./images/showdetail/dd1.jpg" alt="">
+                </div>
+                <div class="right clear clearIe">
+                    <h1 class="font16">ins复古衬衫男ulzzangbf原宿风港风韩版潮流宽松韩风chic外套学生
+                    </h1>
+                    <div class="mon">
+                        <ul>
+                            <li>
+                                <span class="goods-list">价格</span>
+                                <div class="con">
+                                    <i class="money1">¥</i>
+                                    <i class="lastmon">110.00</i>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="goods-list">淘宝价</span>
+                                <div class="con">
+                                    <i class="money2">¥</i>
+                                    <i class="nowmon">88.00</i>
+                                    <i class="hotshop">火热促销</i>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="goods-list">优惠</span>
+                                <div class="con" style="width: 130px;margin-right: 0;">
+                                    <i class="taomon"></i>
+                                    <i class="taomoncon">淘金币可抵4.40元</i>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="sum-com">
+                            <a href="">5</a>
+                            <span>累计评论</span>
+                        </div>
 
+                        <div class="sum-shop">
+                            <a href="">
+                                <span style="font-size: 16px;">1</span>
+                                <span>交易成功</span>
+                            </a>
+                        </div>
                     </div>
-                    <div class="dil-mon">
-                        <span>快递 免运费<a href="javascript:;" class="xsj"></a></span>
+                    <div class="dil">
+                        <span class="goods-list">配送</span>
+                        <div class="address">
+                            <span class="orgin">浙江杭州</span>
+                            至
+                            <span class="target">甘肃兰州安宁区<a href="javascript:;" class="xsj"></a></span>
 
+                        </div>
+                        <div class="dil-mon">
+                            <span>快递 免运费<a href="javascript:;" class="xsj"></a></span>
+
+                        </div>
+                        <div class="hour">
+                            <span>72小时内发货</span>
+                        </div>
                     </div>
-                    <div class="hour">
-                        <span>72小时内发货</span>
+                    <div class="size">
+                        <span class="size_text">尺码</span>
+                        <ul class="sizeDetail right">
+                            <li>X</li>
+                            <li>L</li>
+                            <li class="on">XL</li>
+                            <li>2XL</li>
+                        </ul>
+                    </div>
+                    <div class="color">
+                        <span class="color_text">颜色</span>
+                        <ul class="colorDetail right">
+                            <li class="on">黑色</li>
+                            <li>玫红色</li>
+                            <li>桔红色</li>
+                        </ul>
+                    </div>
+                    <div class="num">
+                        <span class="num_text">数量</span>
+                        <div class="numDetail right">
+                            <span class="sumNum">
+                                <a href="">-</a><input type="text" class="number" value="1"><a href="">+</a>
+                            </span>
+                            件
+                            <span class="allNum">库存(3999)件</span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -438,6 +467,7 @@
         integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
     <script src="./js/menuList.js"></script>
     <script src="./js/showDetail.js"></script>
+    <script src="./js/login.js"></script>
 </body>
 
 </html>

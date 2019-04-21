@@ -4,7 +4,7 @@
     background-color: #fff;
 }
 
-.Detail_main .left{
+.Detail_main>.left{
     width: 230px;
     height: 536px;
 }
@@ -82,20 +82,28 @@ img {
 }
 
 .middle .pic_title {
-    background-color: #ff9c01;
+    background:linear-gradient(to right,#FF8E1B,rgb(255, 192, 128));
     line-height: 35px;
     font-size: 14px;
     text-indent: 20px;  
     text-align: left;
-    width: 1000px;
-    float: left;
+    width: 100%;
+    height: 35px;
     color: #fff;
 }
 
+.middle .middle_top{
+    width: 100%;
+    height: 463px;
+    border: 1px solid #000;
+}
+
+/* 商品图片展示区 */
 
 .middle .left_pic {
     width: 370px;
     height: 463px;
+    
     position: relative;
     float: left;
 }
@@ -128,6 +136,7 @@ img {
     width: 360px;
     height: 360px;
     overflow: hidden;
+    z-index: 1000;
 }
 
 .left_pic .small_piclist{
@@ -154,24 +163,18 @@ img {
     /* opacity: 0.4; */
 }
 
-.middle .right{
-    float: right;
-    width: 630px;
+/* 价格区 */
+.middle_top>.right{
+    width: 580px;
     height: 463px;
-    border: 1px solid #000;
     box-sizing: border-box;
 }
-.middle .right::after{
-    content: "";
-    display: inline-block;
-    clear: both;
-}
-.middle .right h1{
+
+.middle .right .font16{
     width: 430px;
     margin-left: 18px;
     margin-top: 8px;
     line-height: 24px;
-    /* border: 1px solid #000; */
 }
 
 .middle .right .mon{
@@ -179,9 +182,10 @@ img {
     height: 123px;
     margin-left: 18px;
     margin-top: 8px;
-    /* border: 1px solid #000; */
     background-color: #FFF2E8;
     position: relative;
+    z-index: 1;
+
 }
 .middle .right .mon ul li{
     width: 200px;
@@ -243,15 +247,7 @@ img {
     top: 11px;
 }
 
-.middle .right .mon ul li .con .taomon{
-    display: inline-block;
-    /* background-image: url('../images/all.png'); */
-    background-position: -160px 0;
-    width: 16px;
-    height: 16px;
-    background-repeat: no-repeat;
-    vertical-align: -4px;
-}
+
 .middle .right .mon ul li .con .taomoncon{
     line-height: 40px;
 }
@@ -294,13 +290,11 @@ img {
     display: block;
     color: #6c6c6c;
     text-align: center;
-    
 }
 
 .middle .right .dil{
     width: 430px;
     height: 36px;
-    /* border: 1px solid #000; */
     margin-left: 18px;
     border-bottom:1px solid #ccc; 
 }
@@ -327,3 +321,96 @@ img {
     display: inline;
     margin-left: 7px;
 }
+.middle .right .num,
+.middle .right .size,
+.middle .right .color{
+    margin-top: 5px;
+    margin-left: 18px;
+    width: 430px;
+    height: 50px;
+}
+.middle .right .color {
+    margin-top: 0;
+}
+.middle .right .num .num_text,
+.middle .right .color .color_text,
+.middle .right .size .size_text{
+    line-height: 50px;
+    font-size: 12px;
+    color: #6c6c6c;
+    margin-left: 8px;
+}
+.middle .right .num .numDetail,
+.middle .right .color .colorDetail,
+.middle .right .size .sizeDetail{
+    width: 360px;
+    height: 50px;
+    position: relative;
+}
+.middle .right .color .colorDetail li,
+.middle .right .size .sizeDetail li{
+    cursor: pointer;
+    display: inline-block;
+    margin-top: 11px;
+    padding: 5px;
+    height: 14px;
+    line-height: 14px;
+    text-align: center;
+    font-size: 12px;
+    color: #999;
+    border: 2px solid #ccc;
+    transition-duration: 0.2s;
+}
+
+.middle .right .color .colorDetail li{
+    padding: 8px 5px;
+}
+.middle .right .color .colorDetail li:hover,
+.middle .right .size .sizeDetail li:hover{
+    border: 2px solid #f40;
+}
+
+.middle .right .color .colorDetail li.on,
+.middle .right .size .sizeDetail li.on{
+    border: 2px solid #f40;
+}
+
+.middle .right .num .sumNum {
+    display: inline-block;
+    border: 1px solid #ccc;
+    background-color: #ccc;
+    height: 30px;
+}
+
+.middle .right .num .sumNum a{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+    text-align: center;
+    background-color: #ccc;
+}
+
+.middle .right .num .sumNum .number{
+    position: relative;
+    top: -1px;
+    /* box-sizing: border-box; */
+    margin: 0;
+    padding: 0;
+    width: 50px;
+    height: 30px;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    color: #666;
+    border: 1px solid #CCC;
+    outline: 0;
+    background: #FFF;
+}
+.middle .right .num .allNum {
+    
+}
+
+
