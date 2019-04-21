@@ -1,24 +1,55 @@
-
 .menu {
+    /* 宽度撑开 */
     width: 100%;
     height: 100%;
-    /* border: 1px solid #000; */
 }
 
 .menu .menu_list li {
+    /* 每一行菜单高度为35px */
     width: 100%;
     height: 35px;
     position: relative;
 }
 
-
 .menu .menu_list li a {
-    float: left;
-    width: 200px;
+    /* 设置a标签宽度高度撑满更好的点击*/
+    box-sizing: border-box;
+    display: inline-block;
+    position: relative;
+    width: 100%;
     height: 100%;
+    padding: 0 0 0 30px;
+}
+
+.menu .menu_list .red_dot a::before {
+    /* 列表前的小红点 */
+    content: "";
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    margin-top: -3px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: red;
+}
+
+.menu .menu_list .red_dot a::after {
+    /* 列表后的小箭头 */
+    content: "";
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    margin-top: -7px;
+    width: 15px;
+    height: 15px;
+    background-image: url('../images/右.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
 }
 
 .menu .menu_list .title {
+    /* 设置菜单列表标题样式 */
     background-color: #A1A595;
     width: 100%;
     height: 35px;
@@ -32,6 +63,7 @@
 }
 
 .menu .menu_list .right {
+    /* 菜单在关闭状态下的标题右边箭头样式 */
     position: absolute;
     right: 8px;
     top: 50%;
@@ -60,6 +92,7 @@
 }
 
 .menu .menu_list .down {
+    /* 菜单在打开状态下的标题右边箭头样式 */
     position: absolute;
     right: 8px;
     top: 50%;
@@ -88,7 +121,7 @@
 }
 
 .menu .menu_list .red_dot {
-    /* display: block; */
+    /* 默认状态下菜单列表内容不显示 */
     display: none;
     background-color: #E5F1EC;
     border-bottom: 1px solid #ccc;
@@ -98,33 +131,10 @@
     text-align: left;
     font-size: 15px;
     font-family: '微软雅黑';
-    text-indent: 2em;
+    transition-delay: .3s;
 }
 
 .menu .menu_list .red_dot:hover {
+    /* 菜单列表样式 */
     background-color: #FACEC2;
-}
-
-.menu .menu_list .red_dot::before{
-    content: "";
-    position: absolute;
-    left: 16px;
-    top: 50%;
-    margin-top: -3px;
-    width: 6px;
-    height: 6px;
-    border-radius: 50%;
-    background-color: red;
-}
-.menu .menu_list .red_dot::after {
-    content: "";
-    position: absolute;
-    right: 8px;
-    top: 50%;
-    margin-top: -7px;
-    width: 15px;
-    height: 15px;
-    background-image: url('../images/右.png');
-    background-size: 100%;
-    background-repeat: no-repeat;
 }
