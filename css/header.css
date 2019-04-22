@@ -1,3 +1,5 @@
+
+/* --------------------------------------------------顶部导航条区域 */
 .top_nav_father {
     height: 35px;
     background-color: #f5f5f5;
@@ -7,6 +9,7 @@
 }
 
 .top_nav_father .top_nav {
+    /* 居中自适应 */
     width: 1190px;
     height: 100%;
     margin: 0 auto;
@@ -77,8 +80,3 @@
     vertical-align: middle;
 }
 
-.top_nav_father .nav_right .string {
-    color: #c9c6c6;
-    line-height: 35px;
-    margin-left: 15px;
-}
