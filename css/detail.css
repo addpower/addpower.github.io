@@ -114,12 +114,18 @@
     width: 67px;
     height: 67px;
     float: left;
+    box-sizing: border-box;
+    border: 2px solid transparent;
     margin-right: 5px;
+    transition: all 0.2s ease-in-out;
 }
-
+.left_pic .small_piclist li.on{
+    border-color: #f40;
+}
 .left_pic .small_piclist li img {
-    width: 67px;
-    height: 67px;
+    font-size: 0;
+    width: 100%;
+    height: 100%;
 }
 
 .middle .right_pic img {
@@ -278,8 +284,10 @@
 
 .middle .right .dil .address .target,
 .middle .right .dil .dil-mon {
+    position: relative;
     cursor: pointer;
     padding: 3px;
+    border: 1px solid transparent;
 }
 
 .middle .right .dil .address .target:hover,
@@ -291,12 +299,31 @@
     text-decoration: none;
 }
 
+.middle .right .dil .dil-mon.on{
+    background-color: #f40;
+    color: #fff;
+}
 .middle .right .dil .dil-mon,
 .middle .right .dil .hour {
     display: inline;
     margin-left: 7px;
 }
 
+.middle .right .dil .dil-mon .free{
+    display: none;
+    position: absolute;
+    top: 20px;
+    left: 0px;
+    box-sizing: border-box;
+    padding: 10px;
+    width: 180px;
+    background-color: #FFEFE4;
+    border: 1px solid #f40;
+    height: 30px;
+    line-height: 10px;
+    color: #000;
+
+}
 .middle .right .num,
 .middle .right .size,
 .middle .right .color {
@@ -517,8 +544,12 @@
     width: 290px;
     height: 30px;
 }
+
+/* 价格说明文字区域 ------------------------------------------------------ */
 .middle .middle_bottom_main .tab_content2{
     width: 100%;
+    height: auto;
+    margin-bottom: 8px;
 }
 .middle .middle_bottom_main .tab_content2 .statement{
     font-size: 18px;
@@ -530,16 +561,60 @@
 
 .middle .middle_bottom_main .tab_content2 .statement_title{
     margin-top: 8px;
+    padding-top: 8px;
     color: #f40;
 }
 
 .middle .middle_bottom_main .tab_content2 .statement_text{
     color: #888;
 }
+
+/* 买家评价区域 -----------------------------------------*/
 .middle .middle_bottom_main .tab_content3{
     width: 100%;
-    height: 194px;
+    height: auto;
+    display: none;
 }
+.middle .middle_bottom_main .tab_content3 thead{
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+}
+
+.middle .middle_bottom_main .tab_content3 th{
+    width: 130px;
+    font-size: 16px;
+}
+
+.middle .middle_bottom_main .tab_content3 tbody{
+    width: 100%;
+    
+}
+
+.middle .middle_bottom_main .tab_content3 tbody tr{
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    border-bottom: 1px solid #ccc;
+}
+
+.middle .middle_bottom_main .tab_content3 tbody tr:last-child{
+    border-color:transparent; 
+}
+
+.middle .middle_bottom_main .tab_content3 tbody tr td{
+    width: 130px;
+    text-align: center;
+}
+
+.middle .middle_bottom_main .tab_content3 tbody tr td:nth-last-child(1){
+    box-sizing: border-box;
+    padding: 20px;
+    line-height: 16px;
+    text-align: left;
+}
+
+/* 右侧看了又看区域--------------------------------------------- */
 .middle .see-to-see{
     float: right;
     width: 184px;
@@ -585,4 +660,9 @@
 .middle .see-to-see li img{
     width: 150px;
     height: 150px;
+}
+
+.middle .see-to-see li p{
+    color: #999;
+    margin-top: 8px;
 }
