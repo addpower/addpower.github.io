@@ -1,4 +1,3 @@
-
 /* --------------------------------------------------顶部导航条区域 */
 .top_nav_father {
     height: 35px;
@@ -43,8 +42,8 @@
     display: inline-block;
     background-image: url('../images/jiantou.png');
     background-size: 100% 100%;
-    width: 18px;
-    height: 10px;
+    width: 8px;
+    height: 8px;
     vertical-align: 0px;
 }
 
@@ -52,8 +51,8 @@
     display: inline-block;
     background-image: url("../images/car.png");
     background-size: 100% 100%;
-    width: 20px;
-    height: 18px;
+    width: 15px;
+    height: 15px;
     vertical-align: middle;
 }
 
@@ -62,6 +61,87 @@
     font-weight: bold;
 }
 
+.top_nav_father .nav_right .nav-shopcar {
+    position: relative;
+    padding: 0 5px;
+}
+
+.top_nav_father .nav_right .nav-shopcar.on{
+    background-color: #fff;
+}
+
+.top_nav_father .nav_right .shop_car_content {
+    position: absolute;
+    top: 34px;
+    left: 0;
+    width: 290px;
+    padding: 0 8px;
+    background-color: #fff;
+    z-index: 1000;
+    display: none;
+}
+
+.top_nav_father .nav_right .shop_car_content h2{
+    margin-top: 8px;
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #2d3436;
+}
+.shop_car_content .shop_car_list{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+.shop_car_content .shop_car_img {
+    position: absolute;
+    left: 0;
+    width: 50px;
+    height: 50px;
+}
+
+.shop_car_content .shop_car_img img {
+    width: 100%;
+    height: 100%;
+}
+
+
+.shop_car_content .shop_car_title {
+    width: 160px;
+    height: 30px;
+    line-height: 30px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    margin-left: 68px;
+}
+
+.shop_car_content .shop_car_title a {
+    color: #000 !important;
+}
+
+.shop_car_content .shop_car_details{
+    width: 160px;
+    height: 20px;
+    line-height: 20px;
+    margin-left: 68px;
+    color: #7c7c7c;
+}
+
+.shop_car_content .shop_car_money{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    color: #f40;
+    font-weight: 700;
+}
+
+.shop_car_content .delete{
+    position: absolute;
+    right: 10px;
+    bottom: -7px;
+}
 .top_nav_father .nav_right .bg_pic.like_pic {
     display: inline-block;
     background-image: url("../images/star.png");
@@ -79,4 +159,3 @@
     height: 13px;
     vertical-align: middle;
 }
-

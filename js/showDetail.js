@@ -140,9 +140,69 @@ $(function () {
         },
         setDilFree: function () {
             var clickThis = $('.dil-mon');
-            clickThis.click(function(){
+            clickThis.click(function () {
                 clickThis.toggleClass('on');
                 clickThis.find('.free').toggleClass('block');
+            })
+        }
+    }
+
+    /**
+     * 加入购物车
+     */
+
+    var addShop = {
+        init: function () {
+            this.shopCar();
+            this.showShopCar();
+        },
+        showShopCar :function(){
+            $('.nav-shopcar').hover(function(){
+                $(this).toggleClass('on');
+                $(this).find('.shop_car_content').toggleClass('block');
+                console.log($('.shop_car_ul li').length);
+                
+                if($('.shop_car_ul li').length == 0){
+                    $('.shop_car_content h2').text('您最近没有添加商品！');
+                }else{
+                    $('.shop_car_content h2').text('最近加入的宝贝:');
+                }
+            })
+        },
+        shopCar: function () {
+            var litext = '';
+            var shopCar = $('.shop_car_ul');
+            var shopNum;
+            $('.add_shopcar').click(function () {
+                var shopCarLi = $('<li class="shop_car_list"></li>');
+                var goodsMoney = $('#nowmoney').text();
+                var goodsTitle = $('#goods-title').text();
+                var goodsSize = $('.size .on').text();
+                var goodsColor = $('.color .on').text();
+                var goodsImg = $('.box img').attr('src');
+                // 点击加入购物车按钮
+                // 将商品添加至我的购物车
+                // 将li的个数设置为我的购物车中的件数
+                litext = '<div class="shop_car_img">\
+                    <img src="' + goodsImg + '" alt="">\
+                </div>\
+                <div class="shop_car_title">\
+                    <a href="javascript:;">' + goodsTitle + '</a>\
+                </div>\
+                <div class="shop_car_details">\
+                    <span>尺码:' + goodsSize + '</span>\
+                    <span>颜色:' + goodsColor + '</span>\
+                </div>\
+                <div class="shop_car_money ">\
+                    <span>￥' + goodsMoney + '</span>\
+                </div>\
+                <div class="delete">\
+                    <a href="javascipt:;">删除</a>\
+                </div>'
+                shopCarLi.html(litext);
+                shopCarLi.appendTo(shopCar);
+                shopNum = $('.shop_car_ul li').length;
+                $('.shop_car_num').text(shopNum);
             })
         }
     }
@@ -153,6 +213,8 @@ $(function () {
     showDetail.init();
     // 商品数量更改
     goodsNum.init();
-     //快递免邮选择按钮
-     dilFree.init();
+    //快递免邮选择按钮
+    dilFree.init();
+    //加入购物车，购物车商品更新
+    addShop.init();
 })
