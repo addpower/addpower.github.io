@@ -1,3 +1,11 @@
+/*
+ * @Author: Haodong.Li 
+ * @Date: 2019-04-30 12:07:53 
+ * @Last Modified by:   Haodong.Li 
+ * @Last Modified time: 2019-04-30 12:07:53 
+ */
+
+
 $(function () {
     /**
      * 展示商品图片细节
@@ -156,15 +164,15 @@ $(function () {
             this.shopCar();
             this.showShopCar();
         },
-        showShopCar :function(){
-            $('.nav-shopcar').hover(function(){
+        showShopCar: function () {
+            $('.nav-shopcar').hover(function () {
                 $(this).toggleClass('on');
                 $(this).find('.shop_car_content').toggleClass('block');
                 console.log($('.shop_car_ul li').length);
-                
-                if($('.shop_car_ul li').length == 0){
+
+                if ($('.shop_car_ul li').length == 0) {
                     $('.shop_car_content h2').text('您最近没有添加商品！');
-                }else{
+                } else {
                     $('.shop_car_content h2').text('最近加入的宝贝:');
                 }
             })
@@ -207,6 +215,47 @@ $(function () {
         }
     }
 
+    /**
+     * 详情页tab选项卡
+     */
+
+    var goodsTaps = {
+        LiClass: $('#goodsTabs li'),
+        tabContent: $('.middle_bottom_main'),
+        init: function () {
+            this.LiChange()
+        },
+        LiChange: function () {
+            var _this = this;
+            this.LiClass.click(function (e) {
+                var e = e || window.event;
+                var ET = e.target;
+                var ETT = e.target.text;
+                // 判断在点击到border情况下，不执行
+                if(ETT){
+                    $(ET).parent().siblings().removeClass('tab_active');
+                    _this.tabContent.find('article').removeClass('block');
+                    // 通过获取点击事件源对象的text属性判断需要执行的操作
+                    switch (ETT) {
+                        case "累计评价":
+                            $(ET).parent().addClass('tab_active');
+                            _this.tabContent.find('.tab_content3').addClass('block');
+                            break;
+                        case "专享服务":
+                            $(ET).parent().addClass('tab_active');
+                            _this.tabContent.find('.tab_content2').addClass('block');
+                            break;
+                        case "宝贝详情":
+                            $(ET).parent().addClass('tab_active');
+                            _this.tabContent.find('.tab_content').addClass('block');
+                            break;
+                    }
+                };
+            })
+        }
+    }
+
+
     // 尺码颜色选择
     select.init();
     // 显示图片详情
@@ -217,4 +266,6 @@ $(function () {
     dilFree.init();
     //加入购物车，购物车商品更新
     addShop.init();
+    // 详情页显示
+    goodsTaps.init();
 })

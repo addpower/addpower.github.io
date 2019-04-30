@@ -4,7 +4,6 @@
  * @Last Modified by:   Haodong.Li 
  * @Last Modified time: 2019-04-30 12:09:09 
  */
-
 $(function () {
     var timer = null;
     var ImgWidth = $('ul.list li').width();

@@ -27,7 +27,7 @@
                 </li>
                 <li class="nav login">
                     <a href="./manageadmin/login.html" class="login">亲，请登录</a>
-                    <a href="./register/Register.html">免费注册</a>
+                    <a href="javascript:;">免费注册</a>
                 </li>
                 <li class="nav">
                     <a href="#">手机逛</a>
@@ -55,7 +55,7 @@
         </div>
     </div>
     <!-- 顶部区域 end -->
-    
+
     <!-- logo 和 banner start -->
     <div class="logo">
         <div class="logo_container">
@@ -69,7 +69,7 @@
             </div>
         </div>
     </div>
-    <!-- logo 和 banner end --> 
+    <!-- logo 和 banner end -->
     <!-- 菜单导航 start -->
     <div class="nav_bg">
         <div class="nav_content">
@@ -91,26 +91,25 @@
         <div class="zhuce-title">
             <span class="user">
                 <h2>用户注册</h2>
-                <hr />
             </span>
         </div>
         <form action="#" method="POST" enctype="multipart/form-data" class="sign-in">
-            <table>
+            <table style="border-collapse:separate; border-spacing:0px 10px;">
                 <tr>
                     <td class="text"><span class="red">*</span> 用户名:</td>
                     <td>
-                        <input type="text" maxlength="40" value="请输入用户名"
+                        <input type="text" maxlength="40" placeholder="请输入用户名" value=""
                             onfocus="if(this.value=='请输入用户名'){this.value='';}"
-                            onblur="if(this.value==''){this.value='请输入用户名';}" autocomplete="off" name="userName"
+                            onblur="if(this.value==''){this.placeholder='请输入用户名';}" autocomplete="off" name="userName"
                             id="userName" class="userName">
                     </td>
                 </tr>
                 <tr>
                     <td class="text"><span class="red">*</span>邮箱地址:</td>
                     <td>
-                        <input type="text" maxlength="40" value="请输入邮箱地址"
+                        <input type="text" maxlength="40" placeholder="请输入邮箱地址" value=""
                             onfocus="if(this.value=='请输入邮箱地址'){this.value='';}"
-                            onblur="if(this.value==''){this.value='请输入邮箱地址';}" autocomplete="off" name="email"
+                            onblur="if(this.value==''){this.placeholder='请输入邮箱地址';}" autocomplete="off" name="email"
                             id="email">
                     </td>
                 </tr>
@@ -129,70 +128,36 @@
                 <tr>
                     <td class="text"><span class="red">*</span>真实姓名:</td>
                     <td>
-                        <input type="text" maxlength="40" value="请输入真实姓名"
+                        <input type="text" maxlength="40" placeholder="请输入真实姓名" value=""
                             onfocus="if(this.value=='请输入真实姓名'){this.value='';}"
-                            onblur="if(this.value==''){this.value='请输入真实姓名';}" autocomplete="off" name="realName"
+                            onblur="if(this.value==''){this.placeholder='请输入真实姓名';}" autocomplete="off" name="realName"
                             id="realName">
                     </td>
                 </tr>
                 <tr>
                     <td class="text"><span class="red">*</span>您的性别:</td>
-                    <td><input type="radio" name="sex" value="radio" checked />男
-                        <input type="radio" name="sex" value="radio" />女
+                    <td><input type="radio" name="sex" id="male" value="radio" checked />
+                        <label for="male">男</label>
+                        <input type="radio" name="sex" id="female" value="radio" />
+                        <label for="female">女</label>
                     </td>
                 </tr>
                 <tr>
                     <td class="text"><span class="red">*</span>上传头像:</td>
-                    <td><input type="file" name="headPic" id="headPic"
-                            style="cursor: pointer; width: 70px; border: none;" /></td>
+                    <td>
+                        <div class="fileIc">
+                            <input type="file" name="headPic" id="headPic" />点击这里上传
+                        </div>
+                    </td>
                 </tr>
                 <tr>
                     <td class="text"><span class="red">*</span>您的手机:</td>
                     <td>
-                        <input type="text" maxlength="40" value="请输入您的手机号"
+                        <input type="text" maxlength="40" placeholder="请输入您的手机号" value=""
                             onfocus="if(this.value=='请输入您的手机号'){this.value='';}"
-                            onblur="if(this.value==''){this.value='请输入您的手机号';}" autocomplete="off" name="mobile"
+                            onblur="if(this.value==''){this.placeholder='请输入您的手机号';}" autocomplete="off" name="mobile"
                             id="mobile">
                     </td>
-                </tr>
-                <tr>
-                    <td class="text">单位名称:</td>
-                    <td>
-                        <input type="text" maxlength="40" value="请输入单位名称"
-                            onfocus="if(this.value=='请输入单位名称'){this.value='';}"
-                            onblur="if(this.value==''){this.value='请输入单位名称';}" autocomplete="off" name="company"
-                            id="company">
-                    </td>
-                </tr>
-                <tr>
-                    <td class="text">单位地址:</td>
-                    <td>
-                        <select name="province" id="province">
-                            <option value="">请选择省份</option>
-                        </select>
-                        <select name="city" id="city">
-                            <option value="">请选择城市</option>
-                        </select>
-                        <select name="area" id="area">
-                            <option value="">请选择地区</option>
-                        </select>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="text">&nbsp;</td>
-                    <td><input type="text" maxlength="40" value="请输入街道地址"
-                            onfocus="if(this.value=='请输入街道地址'){this.value='';}"
-                            onblur="if(this.value==''){this.value='请输入街道地址';}" autocomplete="off"></td>
-                </tr>
-                <tr>
-                    <td class="text">您的爱好:</td>
-                    <td><input type="checkbox" name="hobby" id="" value="购物">购物
-                        <input type="checkbox" name="hobby" id="" value="影视">影视
-                        <input type="checkbox" name="hobby" id="" value="餐饮">餐饮</td>
-                </tr>
-                <tr>
-                    <td class="text">协议内容:</td>
-                    <td><textarea name="" id="" cols="30" rows="3"></textarea></td>
                 </tr>
                 <tr>
                     <td>&nbsp;</td>

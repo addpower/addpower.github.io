@@ -1,8 +1,17 @@
 .user-zc {
-    width: 1200px;
+    width: 1190px;
     height: 706px;
     margin: 0 auto;
     position: relative;
+    -moz-user-select: none;
+    /*火狐*/
+    -webkit-user-select: none;
+    /*webkit浏览器*/
+    -ms-user-select: none;
+    /*IE10*/
+    -khtml-user-select: none;
+    /*早期浏览器*/
+    user-select: none;
 }
 
 .user-zc .bac-img {
@@ -20,7 +29,20 @@
 
 .zhuce-title {
     height: 70px;
-    width: 800px;
+    width: 100%;
+    position: relative;
+}
+
+.zhuce-title::after {
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    left: 11%;
+    width: 80%;
+    height: 20px;
+    background-image: url('../images/registerTitle.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
 }
 
 .zhuce-title .user h2 {
@@ -42,24 +64,55 @@
     margin-left: 18px;
 }
 
-.user-zc .sign-in td>input,
-.user-zc .sign-in td>select {
+.user-zc .sign-in td>input {
     border: 1px solid rgb(26, 184, 229);
     margin-left: 18px;
     margin-top: 6px;
-    height: 22px;
-}
-
-.user-zc .sign-in td>textarea {
-    border: 1px solid rgb(26, 184, 229);
-    margin-left: 18px;
-    margin-top: 6px;
-    height: 80px;
-    resize: none;
+    height: 35px;
+    width: 200px;
+    font-size: 14px;
+    padding: 0 5px;
     outline: none;
+    border-radius: 10px;
 }
 
+.user-zc .sign-in td>input[type=radio] {
+    width: 36px;
+    height: 18px;
+}
+
+.user-zc .sign-in .fileIc{
+    padding: 4px 10px;
+    height: 20px;
+    line-height: 20px;
+    position: relative;
+    cursor: pointer;
+    color: #888;
+    background: #fafafa;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    overflow: hidden;
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 18px;
+}
+.user-zc .sign-in .fileIc>input[type=file]{
+    position: absolute;
+    font-size: 100px;
+    right: 0;
+    top: 0;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    cursor: pointer
+}
+
+.user-zc .sign-in .fileIc:hover{
+    color: #444;
+    background: #eee;
+    border-color: rgb(26, 184, 229);
+}
 .user-zc .sign-in tr {
+    padding: 8px 0;
     height: 22px;
 }
 
@@ -67,7 +120,7 @@
     font-size: 14px;
     line-height: 22px;
     text-align: right;
-    width: 68px;
+    width: 77px;
 }
 
 .user-zc .sign-in .gray12 {
