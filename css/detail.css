@@ -1,3 +1,21 @@
+/*
+ * @Author: 李浩栋 
+ * @Date: 2019-05-01 20:01:26 
+ * @Last Version by:   0.0 
+ * @Last Version time: 2019-05-01 20:01:26 
+ */
+
+.Show_main {
+    width: 1190px;
+    margin: 0 auto;
+    background-color: #fff;
+}
+
+.Show_main .left {
+    width: 230px;
+    height: 536px;
+}
+
 .Detail_main {
     width: 1190px;
     margin: 0 auto;
@@ -44,10 +62,10 @@
 }
 
 .middle .pic_title {
-    background:linear-gradient(to right,#FF8E1B,rgb(255, 192, 128));
+    background: linear-gradient(to right, #FF8E1B, rgb(255, 192, 128));
     line-height: 35px;
     font-size: 14px;
-    text-indent: 20px;  
+    text-indent: 20px;
     text-align: left;
     width: 100%;
     height: 35px;
@@ -119,9 +137,11 @@
     margin-right: 5px;
     transition: all 0.2s ease-in-out;
 }
-.left_pic .small_piclist li.on{
+
+.left_pic .small_piclist li.on {
     border-color: #f40;
 }
+
 .left_pic .small_piclist li img {
     font-size: 0;
     width: 100%;
@@ -299,17 +319,18 @@
     text-decoration: none;
 }
 
-.middle .right .dil .dil-mon.on{
+.middle .right .dil .dil-mon.on {
     background-color: #f40;
     color: #fff;
 }
+
 .middle .right .dil .dil-mon,
 .middle .right .dil .hour {
     display: inline;
     margin-left: 7px;
 }
 
-.middle .right .dil .dil-mon .free{
+.middle .right .dil .dil-mon .free {
     display: none;
     position: absolute;
     top: 20px;
@@ -324,6 +345,7 @@
     color: #000;
 
 }
+
 .middle .right .num,
 .middle .right .size,
 .middle .right .color {
@@ -459,7 +481,7 @@
 }
 
 
-.middle .right .buy_action .add_shopcar a{
+.middle .right .buy_action .add_shopcar a {
     padding-left: 30px;
     width: 160px;
     height: 36px;
@@ -473,20 +495,22 @@
 
 
 
-.middle  .middle_bottom_main{
+.middle .middle_bottom_main {
     float: left;
     width: 750px;
 }
-.middle  .tab{
+
+.middle .tab {
     width: 100%;
     height: 45px;
     background-color: #f6f6f6;
 }
 
-.middle  .tab li:nth-of-type(1){
+.middle .tab li:nth-of-type(1) {
     border-left: 1px solid #ccc;
 }
-.middle  .tab li{
+
+.middle .tab li {
     float: left;
     width: 131px;
     height: 45px;
@@ -500,13 +524,13 @@
 }
 
 
-.middle .tab li a{
+.middle .tab li a {
     width: 100%;
     height: 100%;
     font-size: 14px;
 }
 
-.middle .tab li .evaluation-sum{
+.middle .tab li .evaluation-sum {
     position: absolute;
     right: 15px;
     top: 0px;
@@ -515,18 +539,18 @@
     font-weight: 700;
 }
 
-.middle .tab li.tab_active{
-    border-top-color:#f40; 
+.middle .tab li.tab_active {
+    border-top-color: #f40;
     background-color: #fff;
     border-bottom: none;
 }
 
-.middle .tab li.tab_active a{
+.middle .tab li.tab_active a {
     color: #f40;
 }
 
 
-.middle .middle_bottom_main .tab_content{
+.middle .middle_bottom_main .tab_content {
     display: none;
     width: 100%;
     height: 20852px;
@@ -534,83 +558,85 @@
 
 
 
-.middle .middle_bottom_main .tab_content .particulars{
+.middle .middle_bottom_main .tab_content .particulars {
     width: 950px;
     height: 170px;
     padding: 20px 20px 10px 50px;
 }
 
-.middle .middle_bottom_main .tab_content .particulars li{
+.middle .middle_bottom_main .tab_content .particulars li {
     float: left;
     width: 290px;
     height: 30px;
 }
 
 /* 价格说明文字区域 ------------------------------------------------------ */
-.middle .middle_bottom_main .tab_content2{
+.middle .middle_bottom_main .tab_content2 {
     margin-top: 10px;
     display: none;
     width: 100%;
     height: auto;
     margin-bottom: 8px;
 }
-.middle .middle_bottom_main .tab_content2 .statement{
+
+.middle .middle_bottom_main .tab_content2 .statement {
     font-size: 18px;
 }
 
-.middle .middle_bottom_main .tab_content2 .statement_title:nth-of-type(1){
+.middle .middle_bottom_main .tab_content2 .statement_title:nth-of-type(1) {
     border-top: 1px solid #ccc;
 }
 
-.middle .middle_bottom_main .tab_content2 .statement_title{
+.middle .middle_bottom_main .tab_content2 .statement_title {
     margin-top: 8px;
     padding-top: 8px;
     color: #f40;
 }
 
-.middle .middle_bottom_main .tab_content2 .statement_text{
+.middle .middle_bottom_main .tab_content2 .statement_text {
     color: #888;
 }
 
 /* 买家评价区域 -----------------------------------------*/
-.middle .middle_bottom_main .tab_content3{
+.middle .middle_bottom_main .tab_content3 {
     margin-top: 10px;
     width: 100%;
     height: auto;
     display: none;
 }
-.middle .middle_bottom_main .tab_content3 thead{
+
+.middle .middle_bottom_main .tab_content3 thead {
     width: 100%;
     height: 30px;
     line-height: 30px;
 }
 
-.middle .middle_bottom_main .tab_content3 th{
+.middle .middle_bottom_main .tab_content3 th {
     width: 130px;
     font-size: 16px;
 }
 
-.middle .middle_bottom_main .tab_content3 tbody{
+.middle .middle_bottom_main .tab_content3 tbody {
     width: 100%;
 }
 
-.middle .middle_bottom_main .tab_content3 tbody tr{
+.middle .middle_bottom_main .tab_content3 tbody tr {
     width: 100%;
     height: 20px;
     line-height: 20px;
     border-bottom: 1px solid #ccc;
 }
 
-.middle .middle_bottom_main .tab_content3 tbody tr:last-child{
-    border-color:transparent; 
+.middle .middle_bottom_main .tab_content3 tbody tr:last-child {
+    border-color: transparent;
 }
 
-.middle .middle_bottom_main .tab_content3 tbody tr td{
+.middle .middle_bottom_main .tab_content3 tbody tr td {
     width: 130px;
     text-align: center;
 }
 
-.middle .middle_bottom_main .tab_content3 tbody tr td:nth-last-child(1){
+.middle .middle_bottom_main .tab_content3 tbody tr td:nth-last-child(1) {
     box-sizing: border-box;
     padding: 20px;
     line-height: 16px;
@@ -618,11 +644,12 @@
 }
 
 /* 右侧看了又看区域--------------------------------------------- */
-.middle .see-to-see{
+.middle .see-to-see {
     float: right;
     width: 184px;
 }
-.middle .see-to-see .see_title{
+
+.middle .see-to-see .see_title {
     position: relative;
     color: #ccc;
     text-align: center;
@@ -630,7 +657,7 @@
     line-height: 50px;
 }
 
-.middle .see-to-see .see_title::before{
+.middle .see-to-see .see_title::before {
     content: "";
     display: block;
     width: 50px;
@@ -642,7 +669,7 @@
 
 }
 
-.middle .see-to-see .see_title::after{
+.middle .see-to-see .see_title::after {
     content: "";
     display: block;
     width: 50px;
@@ -653,19 +680,19 @@
     right: 5px;
 }
 
-.middle .see-to-see li{
+.middle .see-to-see li {
     width: 100%;
     height: 260px;
     text-align: center;
 }
 
 
-.middle .see-to-see li img{
+.middle .see-to-see li img {
     width: 150px;
     height: 150px;
 }
 
-.middle .see-to-see li p{
+.middle .see-to-see li p {
     color: #999;
     margin-top: 8px;
 }
