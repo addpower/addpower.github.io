@@ -6,6 +6,8 @@
  */
 
 $(function () {
+    console.log(123);
+    
     var timer = null;
     var ImgWidth = $('ul.list li').width();
     var nowIndex = 0;
