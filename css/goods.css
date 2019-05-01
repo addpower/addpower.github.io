@@ -5,6 +5,16 @@
  * @Last Version time: 2019-05-01 20:03:53 
  */
 
+ .Show_main {
+    width: 1190px;
+    margin: 0 auto;
+    background-color: #fff;
+}
+
+.Show_main .left {
+    width: 230px;
+    height: 536px;
+}
 .middle {
     float: left;
     width: 760px;
