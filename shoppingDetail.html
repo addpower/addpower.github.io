@@ -1,7 +1,9 @@
+
 <!-- /*
  * @Author: 李浩栋 
- * @Date: 2019-05-01 19:59:27 
- * @Last Version by:   0.0 
+ * @Date: 2019-05-02 16:21:05
+ * @Last Version by:   0.1
+    增加地址选项功能
  * @Last Version time: 2019-05-01 19:59:27 
  */ -->
 <!DOCTYPE html>
@@ -206,17 +208,25 @@
                         <div class="address">
                             <span class="orgin">浙江杭州</span>
                             至
-                            <span class="target">甘肃兰州安宁区<a href="javascript:;" class="xsj"></a></span>
-
+                            <span class="target">甘肃兰州安宁区</span>
                         </div>
                         <div class="dil-mon">
-                            <span>快递 免运费<a href="javascript:;" class="xsj"></a></span>
+                            <span class="express">快递 免运费</span>
                             <div class="free">
                                 <span>快递 免运费</span>
                             </div>
                         </div>
                         <div class="hour">
                             <span>72小时内发货</span>
+                        </div>
+                        <div class="city_selector">
+                            <select name="" class="form-control" id="province">
+                            </select>
+                            <select name="" class="form-control" id="city">
+                            </select>
+                            <select name="" class="form-control" id="town">
+                            </select>
+                            <input type="button" value="确定" class="submit_city">
                         </div>
                     </div>
                     <div class="size">
@@ -501,6 +511,8 @@
     <script src="./js/menuList.js"></script>
     <script src="./js/showDetail.js"></script>
     <script src="./js/login.js"></script>
+    <script language="JavaScript" src="http://passport.baidu.com/js/sitedata_bas.js" charset="GBK"></script>
+    <script src="./citysList/city.js"></script>
 </body>
 
 </html>

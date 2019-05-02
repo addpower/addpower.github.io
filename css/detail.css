@@ -17,19 +17,6 @@
     height: 536px;
 }
 
-
-.xsj {
-    display: inline-block;
-    position: relative;
-    width: 0;
-    height: 0;
-    overflow: hidden;
-    border-color: #606060 transparent transparent;
-    border-width: 4px 4px 0;
-    border-style: solid;
-    margin: 3px;
-}
-
 .font14 {
     font-size: 14px;
     font-weight: 700;
@@ -108,7 +95,7 @@
     width: 360px;
     height: 360px;
     overflow: hidden;
-    z-index: 1000;
+    z-index: 1001;
 }
 
 .left_pic .small_piclist {
@@ -286,10 +273,27 @@
     height: 36px;
     margin-left: 18px;
     border-bottom: 1px solid #ccc;
+    position: relative;
 }
 
+/* 地址样式--------------------------- */
 .middle .right .dil .address {
     display: inline;
+}
+.middle .right .dil .dil-mon .express::after,
+.middle .right .dil .address .target::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 0;
+    height: 0;
+    right: 2px;
+    top: 5px;
+    overflow: hidden;
+    border-color: #606060 transparent transparent;
+    border-width: 4px 4px 0;
+    border-style: solid;
+    margin: 3px;
 }
 
 .middle .right .dil .address .target,
@@ -298,6 +302,41 @@
     cursor: pointer;
     padding: 3px;
     border: 1px solid transparent;
+    padding-right: 18px;
+}
+
+.middle .right .dil .city_selector {
+    display: none;
+    z-index: 1000;
+    position: absolute;
+    box-sizing: border-box;
+    padding: 8px;
+    right: 1px;
+    top: 30px;
+    border: 1px solid #f40;
+    width: 290px;
+    height: 50px;
+    background-color: #fff;
+}
+
+.middle .right .dil .form-control {
+    width: 80px;
+    height: 30px;
+    border: 1px solid #f40;
+    outline: none;
+    visibility: hidden;
+}
+
+.middle .right .dil .city_selector .submit_city {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background-color: #f40;
+    color: #fff;
+    outline: none;
+    border: none;
+    padding: 1px 3px;
+    border-radius: 8px;
 }
 
 .middle .right .dil .address .target:hover,
