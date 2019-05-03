@@ -1,0 +1,31 @@
+[{
+    "title": "首页轮播图1",
+    "src": "https://img.alicdn.com/tfs/TB1YJsYTyrpK1RjSZFhXXXSdXXa-520-280.jpg_q90_.webp",
+    "buyNum": "",
+    "price": "",
+    "location": "index"
+}, {
+    "title": "首页轮播图2",
+    "src": "https://img.alicdn.com/tps/i4/TB1crI_TyLaK1RjSZFxSuumPFXa.jpg_q90_.webp",
+    "buyNum": "",
+    "price": "",
+    "location": "index"
+}, {
+    "title": "首页轮播图3",
+    "src": "https://img.alicdn.com/simba/img/TB101PINMHqK1RjSZFkSut.WFXa.jpg",
+    "buyNum": "",
+    "price": "",
+    "location": "index"
+}, {
+    "title": "首页轮播图4",
+    "src": "https://img.alicdn.com/simba/img/TB1kFpUTMTqK1RjSZPhSutfOFXa.jpg",
+    "buyNum": "",
+    "price": "",
+    "location": "index"
+}, {
+    "title": "首页轮播图5",
+    "src": "https://img.alicdn.com/simba/img/TB1zYF5TwDqK1RjSZSySuuxEVXa.jpg",
+    "buyNum": "",
+    "price": "",
+    "location": "index"
+}]
