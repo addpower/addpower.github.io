@@ -1,31 +1,114 @@
-[{
-    "title": "首页轮播图1",
-    "src": "https://img.alicdn.com/tfs/TB1YJsYTyrpK1RjSZFhXXXSdXXa-520-280.jpg_q90_.webp",
-    "buyNum": "",
-    "price": "",
-    "location": "index"
-}, {
-    "title": "首页轮播图2",
-    "src": "https://img.alicdn.com/tps/i4/TB1crI_TyLaK1RjSZFxSuumPFXa.jpg_q90_.webp",
-    "buyNum": "",
-    "price": "",
-    "location": "index"
-}, {
-    "title": "首页轮播图3",
-    "src": "https://img.alicdn.com/simba/img/TB101PINMHqK1RjSZFkSut.WFXa.jpg",
-    "buyNum": "",
-    "price": "",
-    "location": "index"
-}, {
-    "title": "首页轮播图4",
-    "src": "https://img.alicdn.com/simba/img/TB1kFpUTMTqK1RjSZPhSutfOFXa.jpg",
-    "buyNum": "",
-    "price": "",
-    "location": "index"
-}, {
-    "title": "首页轮播图5",
-    "src": "https://img.alicdn.com/simba/img/TB1zYF5TwDqK1RjSZSySuuxEVXa.jpg",
-    "buyNum": "",
-    "price": "",
-    "location": "index"
-}]
+{
+    "index": [{
+        "src": "https://img.alicdn.com/tfs/TB1YJsYTyrpK1RjSZFhXXXSdXXa-520-280.jpg_q90_.webp"
+    }, {
+        "src": "https://img.alicdn.com/tps/i4/TB1crI_TyLaK1RjSZFxSuumPFXa.jpg_q90_.webp"
+    }, {
+        "src": "https://img.alicdn.com/simba/img/TB101PINMHqK1RjSZFkSut.WFXa.jpg"
+    }, {
+        "src": "https://img.alicdn.com/simba/img/TB1kFpUTMTqK1RjSZPhSutfOFXa.jpg"
+    }, {
+        "src": "https://img.alicdn.com/simba/img/TB1zYF5TwDqK1RjSZSySuuxEVXa.jpg"
+    }],
+    "shoppingShow": [{
+        "title": "ins复古衬衫男ulzzangbf原宿风港风韩版潮流宽松韩风chic外套学生",
+        "src": "https://gd4.alicdn.com/imgextra/i2/2734761526/O1CN011N8wqNo5YtK2Vsz_!!2734761526.jpg_400x400.jpg",
+        "buyNum": "749",
+        "price": "88.00",
+        "href": "shoppingShow.html",
+        "smallImg": [{
+                "two": "https://gd1.alicdn.com/imgextra/i1/2734761526/O1CN011N8wqMMtHMK4hZ9_!!2734761526.jpg_50x50.jpg_.webp"
+            },
+            {
+                "three": "https://gd1.alicdn.com/imgextra/i1/2734761526/O1CN011N8wqN4v6nzUF7l_!!2734761526.jpg_50x50.jpg_.webp"
+            },
+            {
+                "four": "https://gd1.alicdn.com/imgextra/i1/2734761526/O1CN011N8wqOEvVLPXXL6_!!2734761526.jpg_50x50.jpg_.webp"
+            },
+            {
+                "five": "https://gd4.alicdn.com/imgextra/i4/2734761526/O1CN011N8wqOEupnNPgjz_!!2734761526.jpg_50x50.jpg_.webp"
+            }
+        ],
+        "location": "show"
+    }, {
+        "title": "情侣装夏装2019新款韩版经典格子学生宽松短袖衬衫t恤女夏季潮流",
+        "src": "https://img.alicdn.com/imgextra/i2/1848989901/O1CN01590otP2N0hx5Jrsid_!!0-item_pic.jpg_430x430q90.jpg",
+        "buyNum": "119",
+        "price": "69.00",
+        "href": "shoppingShow.html",
+        "smallImg": [{
+                "two": "https://img.alicdn.com/imgextra/i2/1848989901/O1CN012QkCat2N0hx4sjVFW_!!1848989901.jpg_60x60q90.jpg"
+            },
+            {
+                "three": "https://img.alicdn.com/imgextra/i1/1848989901/O1CN01C6JaUI2N0hx61dTTa_!!1848989901.jpg_60x60q90.jpg"
+            },
+            {
+                "four": "https://detail.tmall.com/item.htm?spm=a1z0d.6639537.1997196601.24.5cc47484cGTCdf&id=588585420946#"
+            },
+            {
+                "five": "https://img.alicdn.com/imgextra/i1/1848989901/O1CN01Eapx2e2N0hx5HQ6i3_!!1848989901.jpg_60x60q90.jpg"
+            }
+        ],
+        "location": "show"
+    }, {
+        "title": "男装夏季潮流七分体恤韩版宽松港风五分短袖T恤男士ins超火的上衣",
+        "src": "https://img.alicdn.com/imgextra/i1/739903339/O1CN01ldsctN1aXIwHMLjxH_!!0-item_pic.jpg_430x430q90.jpg",
+        "buyNum": "2.0万+",
+        "price": "69.00",
+        "href": "shoppingShow.html",
+        "smallImg": [{
+                "two": "https://img.alicdn.com/imgextra/i2/739903339/TB2c6a5u_dYBeNkSmLyXXXfnVXa_!!739903339-0-item_pic.jpg_60x60q90.jpg"
+            },
+            {
+                "three": "https://img.alicdn.com/imgextra/i3/739903339/TB2veDFDXGWBuNjy0FbXXb4sXXa_!!739903339.jpg_60x60q90.jpg"
+            },
+            {
+                "four": "https://img.alicdn.com/imgextra/i4/739903339/TB2gaQFDhSYBuNjSspjXXX73VXa_!!739903339.jpg_60x60q90.jpg"
+            },
+            {
+                "five": "https://img.alicdn.com/imgextra/i3/739903339/TB2sa3eDbGYBuNjy0FoXXciBFXa_!!739903339.png_60x60q90.jpg"
+            }
+        ],
+        "location": "show"
+    }, {
+        "title": "黑色九分牛仔裤男修身韩版潮流小脚夏季百搭潮牌男生9分休闲裤子",
+        "src": "https://img.alicdn.com/imgextra/i3/3676536700/TB2tqTrwKOSBuNjy0FdXXbDnVXa_!!3676536700-0-item_pic.jpg_430x430q90.jpg",
+        "buyNum": "6000+",
+        "price": "79.00",
+        "href": "shoppingShow.html",
+        "smallImg": [{
+                "two": "https://img.alicdn.com/imgextra/i3/3676536700/TB2_XRGoxuTBuNkHFNRXXc9qpXa_!!3676536700.jpg_60x60q90.jpg"
+            },
+            {
+                "three": "https://img.alicdn.com/imgextra/i3/3676536700/TB2hyLnh5MnBKNjSZFzXXc_qVXa_!!3676536700.jpg_60x60q90.jpg"
+            },
+            {
+                "four": "https://img.alicdn.com/imgextra/i1/3676536700/O1CN01xWBgKb1zMe9CGd3vN_!!3676536700.jpg_60x60q90.jpg"
+            },
+            {
+                "five": "https://img.alicdn.com/imgextra/i1/3676536700/O1CN01Z3iPwE1zMe9Ce7LVp_!!3676536700.jpg_60x60q90.jpg"
+            }
+        ],
+        "location": "show"
+    }, {
+        "title": "子俊19ss夏季星球主题印花圆领t恤男士韩版宽松短袖t百搭打底上衣",
+        "src": "https://gd1.alicdn.com/imgextra/i4/66695381/O1CN013EjZ0E1pcXjyEzqqt_!!66695381.jpg_50x50.jpg_.webp",
+        "buyNum": "217",
+        "price": "48.00",
+        "href": "shoppingShow.html",
+        "smallImg": [{
+                "two": "https://gd1.alicdn.com/imgextra/i1/66695381/O1CN01vVglOE1pcXjyp9Ck6_!!66695381.jpg_50x50.jpg_.webp"
+            },
+            {
+                "three": "https://gd4.alicdn.com/imgextra/i4/66695381/O1CN0172Bmir1pcXk08dUHx_!!66695381.jpg_50x50.jpg_.webp"
+            },
+            {
+                "four": "https://gd2.alicdn.com/imgextra/i2/66695381/O1CN01bDERyp1pcXk3Cffbx_!!66695381.jpg_50x50.jpg_.webp"
+            },
+            {
+                "five": "https://gd3.alicdn.com/imgextra/i3/66695381/O1CN01KiYu3h1pcXk0dVI8o_!!66695381.jpg_50x50.jpg_.webp"
+            }
+        ],
+        "location": "show"
+    }]
+}

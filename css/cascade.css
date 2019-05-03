@@ -4,20 +4,12 @@
  * @Last Version by:   0.0 
  * @Last Version time: 2019-05-01 20:01:43 
  */
- 
+
 .user-zc {
     width: 1190px;
     height: 706px;
     margin: 0 auto;
     position: relative;
-    -moz-user-select: none;
-    /*火狐*/
-    -webkit-user-select: none;
-    /*webkit浏览器*/
-    -ms-user-select: none;
-    /*IE10*/
-    -khtml-user-select: none;
-    /*早期浏览器*/
     user-select: none;
 }
 
@@ -70,7 +62,9 @@
     margin-top: 10px;
     margin-left: 18px;
 }
-
+.user-zc .sign-in tr td:nth-of-type(2){
+    position: relative;
+}
 .user-zc .sign-in td>input {
     border: 1px solid rgb(26, 184, 229);
     margin-left: 18px;
@@ -88,7 +82,21 @@
     height: 18px;
 }
 
-.user-zc .sign-in .fileIc{
+
+
+.userName+.yes {
+    display: none;
+    position: absolute;
+    right: 64px;
+    top: 17px;
+    width: 15px;
+    height: 15px;
+    background: url('../images/yes.png') no-repeat;
+    background-size: 100% 100%;
+
+}
+
+.user-zc .sign-in .fileIc {
     padding: 4px 10px;
     height: 20px;
     line-height: 20px;
@@ -103,7 +111,8 @@
     margin-top: 10px;
     margin-left: 18px;
 }
-.user-zc .sign-in .fileIc>input[type=file]{
+
+.user-zc .sign-in .fileIc>input[type=file] {
     position: absolute;
     font-size: 100px;
     right: 0;
@@ -113,11 +122,12 @@
     cursor: pointer
 }
 
-.user-zc .sign-in .fileIc:hover{
+.user-zc .sign-in .fileIc:hover {
     color: #444;
     background: #eee;
     border-color: rgb(26, 184, 229);
 }
+
 .user-zc .sign-in tr {
     padding: 8px 0;
     height: 22px;
