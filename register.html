@@ -1,9 +1,11 @@
+
 <!-- /*
  * @Author: 李浩栋 
- * @Date: 2019-05-01 19:59:40 
- * @Last Version by:   0.0 
+ * @Date: 2019-05-04 21:23:36 
+ * @Last Version by:   0.1 
  * @Last Version time: 2019-05-01 19:59:40 
  */ -->
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -81,7 +83,7 @@
     <div class="nav_bg">
         <div class="nav_content">
             <ul class="nav">
-                <li class="nav_active"><a href="shoppingIndex.html" class="white"> 首页</a></li>
+                <li class="nav_active"><a href="index.html" class="white"> 首页</a></li>
                 <li><a href="shoppingShow.html" class="white"> 最新上架</a></li>
                 <li>品牌活动</li>
                 <li>原厂直供</li>
@@ -104,35 +106,41 @@
             <table style="border-collapse:separate; border-spacing:0px 10px;">
                 <tr>
                     <td class="text"><span class="red">*</span> 用户名:</td>
-                    <td>
+                    <td class="user-name">
                         <input type="text" maxlength="40" placeholder="请输入用户名" value=""
                             onfocus="if(this.value=='请输入用户名'){this.value='';}"
                             onblur="if(this.value==''){this.placeholder='请输入用户名';}" autocomplete="off" name="userName"
                             id="userName" class="userName">
                         <span class="yes"></span>
-                        <span class="tips" style="margin-left:8px; display: none; " >用户名必须包含5-12位且第一位须为字母</span>
+                        <span class="tips">用户名必须包含8-12位必须包含数字且第一位须为字母</span>
                     </td>
                 </tr>
                 <tr>
                     <td class="text"><span class="red">*</span>邮箱地址:</td>
-                    <td>
-                        <input type="email" maxlength="40" placeholder="请输入邮箱地址" value=""
+                    <td class="user-email">
+                        <input type="text" maxlength="40" placeholder="请输入邮箱地址" value=""
                             onfocus="if(this.value=='请输入邮箱地址'){this.value='';}"
                             onblur="if(this.value==''){this.placeholder='请输入邮箱地址';}" autocomplete="off" name="email"
                             id="email">
+                        <span class="yes"></span>
+                        <span class="tips">请输入正确的邮箱地址</span>
                     </td>
                 </tr>
                 <tr>
                     <td class="text"><span class="red">*</span>设置密码:</td>
-                    <td><input type="password" name="userPwd" id="userPwd"></td>
-                </tr>
-                <tr>
-                    <td class="text">&nbsp;</td>
-                    <td class="gray12">6-12个字符,由字母、数字和符号的两种以上组合.&nbsp;</td>
+                    <td class="user-pwd">
+                        <input type="password" name="userPwd" id="userPwd">
+                        <span class="yes"></span>
+                        <span class="tips">6-12个字符,由字母和数字的两种组合</span>
+                    </td>
                 </tr>
                 <tr>
                     <td class="text"><span class="red">*</span>确认密码:</td>
-                    <td><input type="password" name="userRePwd" id="userRePwd"></td>
+                    <td class="user-repwd">
+                        <input type="password" name="userRePwd" id="userRePwd">
+                        <span class="yes"></span>
+                        <span class="tips">两次输入的密码不同</span>
+                    </td>
                 </tr>
                 <tr>
                     <td class="text"><span class="red">*</span>您的性别:</td>
@@ -152,16 +160,18 @@
                 </tr>
                 <tr>
                     <td class="text"><span class="red">*</span>您的手机:</td>
-                    <td>
+                    <td class="user-phone">
                         <input type="text" maxlength="40" placeholder="请输入您的手机号" value=""
                             onfocus="if(this.value=='请输入您的手机号'){this.value='';}"
                             onblur="if(this.value==''){this.placeholder='请输入您的手机号';}" autocomplete="off" name="mobile"
                             id="mobile">
+                        <span class="yes"></span>
+                        <span class="tips">手机号格式有误</span>
                     </td>
                 </tr>
                 <tr>
                     <td>&nbsp;</td>
-                    <td><input type="submit" name="button" value="提交" class="submit"></td>
+                    <td><input type="submit" name="button" value="提交" class="submit" ></td>
                 </tr>
             </table>
         </form>
@@ -178,7 +188,7 @@
     <!-- 页面版权区域 end -->
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"
         integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
-    <script src="./register.js"></script>
+    <script src="./js/register.js"></script>
 </body>
 
 </html>

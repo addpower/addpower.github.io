@@ -29,6 +29,7 @@
 .zhuce-title {
     height: 70px;
     width: 100%;
+    font-size: 18px;
     position: relative;
 }
 
@@ -64,6 +65,7 @@
 }
 .user-zc .sign-in tr td:nth-of-type(2){
     position: relative;
+    width: 800px;
 }
 .user-zc .sign-in td>input {
     border: 1px solid rgb(26, 184, 229);
@@ -84,16 +86,23 @@
 
 
 
-.userName+.yes {
+.yes {
     display: none;
     position: absolute;
-    right: 64px;
     top: 17px;
     width: 15px;
     height: 15px;
+    margin-left: 8px;
     background: url('../images/yes.png') no-repeat;
     background-size: 100% 100%;
 
+}
+
+.tips{
+    display: none;
+    position: absolute;
+    top: 17px;
+    margin-left: 8px;
 }
 
 .user-zc .sign-in .fileIc {
@@ -137,7 +146,7 @@
     font-size: 14px;
     line-height: 22px;
     text-align: right;
-    width: 77px;
+    width: 79px;
 }
 
 .user-zc .sign-in .gray12 {
