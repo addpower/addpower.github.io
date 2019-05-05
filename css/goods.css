@@ -68,7 +68,7 @@
     float: right;
 }
 
-.pic_list .goods_box img {
+.pic_list .goods_box .goods_img {
     padding: 5px;
     margin-bottom: 10px;
     width: 150px;
@@ -84,7 +84,7 @@
 }
 
 .pic_list .goods_box dd .goods_title a:hover{
-    color: #ff9c01;
+    color: #e84118;
 }
 .pic_list2 {
     margin: 0 6px 0 12px;
