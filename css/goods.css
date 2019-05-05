@@ -18,7 +18,7 @@
 .middle {
     float: left;
     width: 760px;
-    height: 860px;
+    height: auto;
     /* margin: 0 auto; */
     /* margin-left: 210px; */
 }
@@ -38,7 +38,7 @@
     float: left;
 }
 
-.pic_list dl {
+.pic_list .goods_box {
     box-sizing: border-box;
     float: left;
     width: 170px;
@@ -68,14 +68,14 @@
     float: right;
 }
 
-.pic_list dl img {
+.pic_list .goods_box img {
     padding: 5px;
     margin-bottom: 10px;
     width: 150px;
     height: 175px;
 }
 
-.pic_list dl dd span {
+.pic_list .goods_box dd .goods_title {
     cursor: pointer;
     display: inline-block;
     width: 152px;
@@ -83,9 +83,8 @@
     overflow: hidden;
 }
 
-.pic_list dl dd span:hover{
+.pic_list .goods_box dd .goods_title a:hover{
     color: #ff9c01;
-     
 }
 .pic_list2 {
     margin: 0 6px 0 12px;
