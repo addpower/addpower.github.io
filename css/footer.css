@@ -106,6 +106,12 @@
     top: -5px;
     left: -15px;
 }
+
+
+.footer_list .list i{
+    margin-right: 8px;
+    color: #f40;
+}
 .footer_list .list li:first-child{
     cursor: default;
 }
