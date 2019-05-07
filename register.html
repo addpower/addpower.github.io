@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="css/menu.css">
     <link rel="stylesheet" href="css/copyright.css">
     <link rel="stylesheet" href="css/cascade.css">
+    <link rel="stylesheet" href="http://ico.z01.com/zico.min.css">
     <title>用户注册-Q-Walking E&S</title>
 </head>
 
@@ -32,33 +33,38 @@
             <ul class="nav_left left">
                 <li class="nav china">
                     <span class="china">中国大陆</span>
-                    <span class="bg_pic dsj_pic"></span>
+                    <i class="zi zi_forDown"></i>
                 </li>
                 <li class="nav login">
-                    <a href="./manageadmin/login.html" class="login">亲，请登录</a>
-                    <a href="javascript:;">免费注册</a>
+                    <a href="javascript:;" class="login" onclick="">亲，请登录</a>
+                    <a href="./register.html">免费注册</a>
                 </li>
                 <li class="nav">
                     <a href="#">手机逛</a>
                 </li>
             </ul>
             <ul class="nav_right right">
-                <li class="nav">
+                <li class="nav-shopcar">
                     <a href="#">
-                        <span class="bg_pic shop_car_pic"></span> 我的购物车
+                        <i class="zi zi_shoppingcart" zico="购物车黑"></i> 我的购物车
                         <span class="shop_car_num">0</span>件
-                        <span class="bg_pic dsj_pic"></span>
+                        <i class="zi zi_forDown"></i>
                     </a>
+                    <!-- 购物车内详情 -->
+                    <div class="shop_car_content">
+                        <h2></h2>
+                        <ul class="shop_car_ul"></ul>
+                    </div>
                 </li>
                 <li class="nav">
                     <a href="#">
-                        <span class="bg_pic like_pic"></span> 收藏夹
-                        <span class="bg_pic dsj_pic"></span>
+                        <i class="zi zi_starLine" zico="五角星细线"></i> 收藏夹
+                        <i class="zi zi_forDown"></i>
                     </a>
                 </li>
                 <li class="nav">
                     <a href="#">联系客服</a>
-                    <span class="bg_pic dsj_pic"></span>
+                    <i class="zi zi_forDown"></i>
                 </li>
             </ul>
         </div>

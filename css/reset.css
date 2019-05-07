@@ -30,7 +30,8 @@ ul {
 html {
     color: #000;
     overflow-y: scroll;
-    overflow: -moz-scrollbars
+    overflow: -moz-scrollbars;
+    font-size: 10px;
 }
 
 body,
