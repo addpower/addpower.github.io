@@ -30,7 +30,6 @@ $(function () {
             dataType: "json",
             success: function (response) {
                 var dataSum = response.shoppingShow;
-                console.log(dataSum);
                 
 
                 /**
@@ -90,7 +89,7 @@ $(function () {
     }
 
     function endThis(){
-        console.log('end');
+        
         
     }
 
