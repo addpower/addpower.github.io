@@ -68,7 +68,9 @@
     color: #ccc;
     float: right;
 }
-
+.pic_list{
+    min-height: 500px;
+}
 .pic_list .goods_box .goods_img_box{
     width: 150px;
     height: 190px;

@@ -15,7 +15,7 @@ $(function () {
         var scrollTop = Math.ceil($(this).scrollTop());
         var scrollHeight = $(document).height();
         var windowHeight = Math.ceil($(this).height());
-        if (scrollTop + windowHeight >= scrollHeight) {
+        if (scrollTop + windowHeight >= scrollHeight - 180) {
             getGoodsList();
         }
     });
@@ -30,7 +30,7 @@ $(function () {
             dataType: "json",
             success: function (response) {
                 var dataSum = response.shoppingShow;
-                
+
 
                 /**
                  * 0:
@@ -44,17 +44,16 @@ $(function () {
                     __proto__: Object
                  */
 
-                 /**
-                  * 通过一段一段截取图片  呈现分页效果
-                  */
+                /**
+                 * 通过一段一段截取图片  呈现分页效果
+                 */
                 var data = dataSum.slice(lastNum.x, lastNum.y);
-                if(lastNum.y >= dataSum.length){
+                if (lastNum.y >= dataSum.length) {
                     endThis();
                 }
 
                 if (data && resizeBy.length > 0) {
                     $.each(data, function (index, ele) {
-
                         $('div.pic_list').append(`<dl class="goods_box">
                     <div class="goods_img_box">
                         <a href="${ele.href}#${ele.id}" target="_blank">
@@ -73,10 +72,14 @@ $(function () {
                 </dl>`)
                     })
                 }
-                $('div.pic_list img.goods_img').lazyload();
+                $('div.pic_list img.goods_img').lazyload({
+                    threshold: 180,
+                    effect: 'fadeIn',
+                    placeholder: "../images/loading.gif" //用图片提前占位
+                });
 
                 begin = lastNum.x + lastNum.y;
-                end = begin+ loadingNum;
+                end = begin + loadingNum;
 
 
 
@@ -88,9 +91,9 @@ $(function () {
         });
     }
 
-    function endThis(){
-        
-        
+    function endThis() {
+
+
     }
 
 })
