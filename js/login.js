@@ -1,9 +1,10 @@
 /*
- * @Author: 李浩栋 
- * @Date: 2019-05-01 20:08:32 
- * @Last Version by:   0.0 
- * @Last Version time: 2019-05-01 20:08:32 
+ * @Author: 李浩栋
+ * @Begin: 2019-04-19 11:12:07
+ * @Update: 2019-05-12 20:12:21
+ * @Update log: 更新日志
  */
+
 $(function () {
     $('a.login').click(function () {
         loginShow();

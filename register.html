@@ -1,10 +1,9 @@
-
-<!-- /*
- * @Author: 李浩栋 
- * @Date: 2019-05-04 21:23:36 
- * @Last Version by:   0.1 
- * @Last Version time: 2019-05-01 19:59:40 
- */ -->
+<!--
+ * @Author: 李浩栋
+ * @Begin: 2019-04-07 20:56:26
+ * @Update: 2019-05-13 09:12:35
+ * @Update log: 更新日志
+ -->
 
 
 <!DOCTYPE html>
@@ -16,17 +15,19 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="./images/logo.png" rel="shortcut icon">
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="https://ico.z01.com/zico.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/logo.css">
     <link rel="stylesheet" href="css/menu.css">
     <link rel="stylesheet" href="css/copyright.css">
     <link rel="stylesheet" href="css/cascade.css">
-    <link rel="stylesheet" href="https://ico.z01.com/zico.min.css">
+
     <title>用户注册-Q-Walking E&S</title>
 </head>
 
 <body>
-    <!-- 顶部区域 start -->
     <!-- 顶部区域 start -->
     <div class="top_nav_father">
         <div class="top_nav">
@@ -118,7 +119,7 @@
                             onblur="if(this.value==''){this.placeholder='请输入用户名';}" autocomplete="off" name="userName"
                             id="userName" class="userName">
                         <span class="yes"></span>
-                        <span class="tips">用户名必须包含8-12位必须包含数字且第一位须为字母</span>
+                        <span class="tips">用户名必须包含4-16位</span>
                     </td>
                 </tr>
                 <tr>
@@ -157,10 +158,13 @@
                     </td>
                 </tr>
                 <tr>
-                    <td class="text"><span class="red">*</span>上传头像:</td>
+                    <td class="text">上传头像:</td>
                     <td>
                         <div class="fileIc">
-                            <input type="file" name="headPic" id="headPic" />点击这里上传
+                            <div class="custom-file">
+                                <input type="file" class="custom-file-input" id="customFile">
+                                <label class="custom-file-label file-label" for="customFile">请选择文件</label>
+                            </div>
                         </div>
                     </td>
                 </tr>
@@ -177,7 +181,7 @@
                 </tr>
                 <tr>
                     <td>&nbsp;</td>
-                    <td><input type="submit" name="button" value="提交" class="submit" ></td>
+                    <td><input type="submit" name="button" value="提交" class="submit"></td>
                 </tr>
             </table>
         </form>
@@ -192,8 +196,16 @@
         <div class="clear"></div>
     </div>
     <!-- 页面版权区域 end -->
-    <script src="https://code.jquery.com/jquery-1.12.4.min.js"
-        integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+
     <script src="./js/register.js"></script>
 </body>
 

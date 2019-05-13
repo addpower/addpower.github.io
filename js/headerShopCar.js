@@ -1,3 +1,16 @@
+/*
+ * @Author: 李浩栋
+ * @Begin: 2019-04-30 10:54:50
+ * @Update: 2019-05-13 08:10:59
+ * @Update log: 更新日志
+ */
+
+
+/**
+ * @description: 购物车功能
+ * @param {type} 
+ * @return: 
+ */ 
 $(function () {
     /**
      * 加入购物车

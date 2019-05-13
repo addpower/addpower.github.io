@@ -1,9 +1,10 @@
 /*
- * @Author: 李浩栋 
- * @Date: 2019-05-01 20:01:43 
- * @Last Version by:   0.0 
- * @Last Version time: 2019-05-01 20:01:43 
+ * @Author: 李浩栋
+ * @Begin: 2019-04-07 20:56:26
+ * @Update: 2019-05-13 09:30:43
+ * @Update log: 更新日志
  */
+
 
 .user-zc {
     width: 1190px;
@@ -77,8 +78,12 @@
     padding: 0 5px;
     outline: none;
     border-radius: 10px;
+    transition: box-shadow 0.15s ease-in-out;
 }
+.user-zc .sign-in td>input:focus{
+    box-shadow: 1px 2px 6px #3498DE;
 
+}
 .user-zc .sign-in td>input[type=radio] {
     width: 36px;
     height: 18px;
@@ -106,15 +111,10 @@
 }
 
 .user-zc .sign-in .fileIc {
-    padding: 4px 10px;
-    height: 20px;
-    line-height: 20px;
     position: relative;
     cursor: pointer;
     color: #888;
     background: #fafafa;
-    border: 1px solid #ddd;
-    border-radius: 4px;
     overflow: hidden;
     display: inline-block;
     margin-top: 10px;
@@ -142,6 +142,9 @@
     height: 22px;
 }
 
+.file-label::after{
+    content: "上传文件" !important;
+}
 .user-zc .sign-in .text {
     font-size: 14px;
     line-height: 22px;
@@ -166,7 +169,6 @@
 .user-zc .sign-in td input.submit {
     width: 100px;
     height: 37px;
-    background-color: rgb(26, 184, 229);
     border: none;
     color: #fff;
     border-radius: 9px;

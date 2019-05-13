@@ -1,10 +1,15 @@
 /*
- * @Author: 李浩栋 
- * @Date: 2019-05-05 12:50:34  
- * @Last Version by:   0.1 
- * @Last Version time: 2019-05-01 20:07:55 
+ * @Author: 李浩栋
+ * @Begin: 2019-04-18 10:47:36
+ * @Update: 2019-05-13 08:03:51
+ * @Update log: 更新日志
  */
 
+/**
+ * @description: 轮播图实现
+ * @param {type} 
+ * @return: 
+ */
 $(function () {
 
     var timer = null;

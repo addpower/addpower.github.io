@@ -23,6 +23,13 @@
         "smallImg": ["https://gd1.alicdn.com/imgextra/i1/2734761526/O1CN011N8wqMMtHMK4hZ9_!!2734761526.jpg", "https://gd1.alicdn.com/imgextra/i1/2734761526/O1CN011N8wqN4v6nzUF7l_!!2734761526.jpg", "https://gd1.alicdn.com/imgextra/i1/2734761526/O1CN011N8wqOEvVLPXXL6_!!2734761526.jpg", "https://gd4.alicdn.com/imgextra/i4/2734761526/O1CN011N8wqOEupnNPgjz_!!2734761526.jpg"
 
         ],
+        "commentsSum":"438",
+        "transactionSum":"411",
+        "sizeSum":["M","L","XL","2XL"],
+        "colorSum":{
+            "img":"",
+            "imgTitle":""
+        },
         "location": "show"
     }, {
         "id": "02",
@@ -31,9 +38,20 @@
         "buyNum": "119",
         "price": "69.00",
         "href": "shoppingDetail.html",
-        "smallImg": ["https://gd1.alicdn.com/imgextra/i1/2734761526/O1CN011N8wqMMtHMK4hZ9_!!2734761526.jpg", "https://gd1.alicdn.com/imgextra/i1/2734761526/O1CN011N8wqN4v6nzUF7l_!!2734761526.jpg", "https://gd1.alicdn.com/imgextra/i1/2734761526/O1CN011N8wqOEvVLPXXL6_!!2734761526.jpg", "https://gd4.alicdn.com/imgextra/i4/2734761526/O1CN011N8wqOEupnNPgjz_!!2734761526.jpg"
-
+        "smallImg": ["https://img.alicdn.com/imgextra/i2/1848989901/O1CN012QkCat2N0hx4sjVFW_!!1848989901.jpg",
+             "https://img.alicdn.com/imgextra/i1/1848989901/O1CN01C6JaUI2N0hx61dTTa_!!1848989901.jpg", 
+             "https://img.alicdn.com/imgextra/i4/1848989901/O1CN01JcKTPk2N0hx5Gtrlp_!!1848989901.jpg", 
+             "https://img.alicdn.com/imgextra/i4/1848989901/O1CN01JcKTPk2N0hx5Gtrlp_!!1848989901.jpg"
         ],
+        "commentsSum":"109",
+        "transactionSum":"52",
+        "sizeSum":["S","M","L","XL"],
+        "colorSum":{
+            "img":["https://img.alicdn.com/imgextra/i3/1848989901/O1CN01YJELWR2N0hx6hd9qk_!!1848989901.jpg",
+                    "https://img.alicdn.com/imgextra/i4/1848989901/O1CN01X4ZXYi2N0hx6hdh9c_!!1848989901.jpg",
+                    "https://img.alicdn.com/imgextra/i1/1848989901/O1CN013VsZPN2N0hx4is2Tt_!!1848989901.jpg"],
+            "imgTitle":["绿色","咖啡色","黄色"]
+        },
         "location": "show"
     }, {
         "id": "03",

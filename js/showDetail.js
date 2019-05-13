@@ -1,12 +1,15 @@
 /*
- * @Author: 李浩栋 
- * @Date: 2019-05-01 20:08:10 
- * @Last Version by:   0.0 
- * @Last Version time: 2019-05-01 20:08:10 
+ * @Author: 李浩栋
+ * @Begin: 2019-04-20 10:47:20
+ * @Update: 2019-05-13 08:05:39
+ * @Update log: 更新日志
  */
 
-
-
+/**
+ * @description: 详情页面展示的js代码集合
+ * @param {type} 
+ * @return: 
+ */
 $(function () {
     
     /**

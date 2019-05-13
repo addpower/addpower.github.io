@@ -1,3 +1,11 @@
+/*
+ * @Author: 李浩栋 
+ * @Date: 2019-05-12 07:58:36 
+ * @Last Version by:   0.0 
+ * @Last Version time: 2019-05-12 07:58:36 
+ */
+
+
 /**
  * 展示商品图片细节
  */
@@ -21,7 +29,6 @@ var showDetail = {
             /**
              * 通过获取小图片的src  设置大图片的src 改变图片
              */
-
              var boxImg  = new Image();
              $thisImg = $(this).attr('src');
              boxImg.src = $thisImg+'_400x400.jpg';
