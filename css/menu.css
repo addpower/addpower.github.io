@@ -1,7 +1,7 @@
 /*
  * @Author: 李浩栋
  * @Begin: 2019-04-07 20:56:26
- * @Update: 2019-05-13 09:45:47
+ * @Update: 2019-05-20 09:03:14
  * @Update log: 更新日志
  */
 
@@ -12,6 +12,7 @@
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FF4466', endColorstr='#F37380',GradientType=0 );
     margin-bottom: 8px;
     box-shadow: 0 2px 10px 0 rgba(0,0,0,.4);
+    transition: all 0.5s;
 }
 
 .nav_bg .nav_content{

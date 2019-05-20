@@ -1,8 +1,8 @@
 <!--
  * @Author: 李浩栋
  * @Begin: 2019-04-07 20:56:26
- * @Update: 2019-05-13 08:11:56
- * @Update log: 更新日志
+ * @Update: 2019-05-20 09:07:29
+ * @Update log: 增加锚点区域 添加滚动时顶部菜单固定
  -->
 
 <!DOCTYPE html>
@@ -15,8 +15,9 @@
     <meta name="keywords" content="漫步时尚广场,时尚,购物,影视,餐饮">
     <meta name="description" content="游客漫步在时尚广场,可漫步湖畔步行街,可在国际名品店
     、时尚精品店徜徉、在电影区感受视听震撼,在咖啡、酒吧一条街放松身心,在世界特色餐厅享受美味。">
-    <meta name="author" content="Office栋">
+    <meta name="author" content="powerdong">
     <link href="./images/logo.png" rel="shortcut icon">
+    <link rel="stylesheet" href="https://ico.z01.com/zico.min.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/logo.css">
@@ -26,7 +27,6 @@
     <link rel="stylesheet" href="css/copyright.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/login.css">
-    <link rel="stylesheet" href="https://ico.z01.com/zico.min.css">
 
     <title>漫步时尚广场E&amp;S</title>
 </head>
@@ -165,7 +165,7 @@
         </div>
         <!-- 中间区 end -->
         <!-- 右部区域 start -->
-        <div class="right">
+        <div class="right max1200">
             <h1 class="hot_title">看了又看</h1>
             <ul class="hot_list">
                 <li>
@@ -191,9 +191,15 @@
             </ul>
         </div>
         <!-- 右部区域 end -->
+
     </div>
     <!-- 主体区 end -->
-
+    <!-- 锚点区域 start -->
+    <div id="go-top">
+        <div class="arrow"></div>
+        <div class="stick"></div>
+    </div>
+    <!-- 锚点区域 end -->
     <!-- 底部区域 start -->
     <div class="footer">
         <div class="end">
@@ -280,6 +286,7 @@
     <script src="./js/loadingPic.js"></script>
     <script src="./js/menuList.js"></script>
     <script src="./js/login.js"></script>
+    <script src="./js/scroll.js"></script>
 </body>
 
 </html>

@@ -1,29 +1,32 @@
 /*
  * @Author: 李浩栋
  * @Begin: 2019-04-07 20:56:26
- * @Update: 2019-05-13 09:45:23
- * @Update log: 更新日志
+ * @Update: 2019-05-20 08:55:27
+ * @Update log: 添加部分注释 增加锚点区域。
  */
 
-
- .Show_main {
+/* -----------------主体区域 */
+.Show_main {
     width: 1190px;
     margin: 0 auto;
     background-color: #fff;
+    position: relative;
 }
 
+/* -----------------主体左半区域 */
 .Show_main .left {
     width: 230px;
     height: 536px;
 }
-.middle {
+
+/* ------------------主体中间区域 */
+.Show_main .middle {
     float: left;
     width: 760px;
     height: auto;
-    /* margin: 0 auto; */
-    /* margin-left: 210px; */
 }
 
+/* ------------------主体商品列表区 */
 .middle .pic_title {
     background-color: #ff9c01;
     line-height: 40px;
@@ -35,64 +38,57 @@
     color: #fff;
     margin: 0 10px 10px;
 }
+
 .middle .pic_title .pic_list {
-    float: left;
+    width: 760px;
+    min-height: 500px;
 }
 
 .pic_list .goods_box {
     box-sizing: border-box;
-    float: left;
+    display: inline-block;
     width: 170px;
-    /* height: 260px; */
     border: 1px solid #ccc;
     margin: 0 10px 10px;
-    /* padding-bottom: 10px; */
     padding: 3px 8px 10px;
 }
 
-.price {
+.goods_box .price {
     font-size: 15px;
     font-weight: 700;
     color: red;
     float: left;
 }
 
-.price2 {
-    font-size: 12px;
-    font-weight: 700;
-    color: red;
-    text-align: center;
-}
-
-.font12 {
+.goods_box .font12 {
     font-size: 12px;
     color: #ccc;
     float: right;
 }
-.pic_list{
-    min-height: 500px;
-}
-.pic_list .goods_box .goods_img_box{
+
+.goods_box .goods_img_box {
     width: 150px;
     height: 190px;
 }
 
-.pic_list .goods_box .goods_img {
+.goods_box .goods_img {
     box-sizing: border-box;
     padding: 5px;
     margin-bottom: 10px;
 }
 
-.pic_list .goods_box dd .goods_title {
+.goods_box dd .goods_title {
     display: inline-block;
     width: 152px;
     height: 33px;
     overflow: hidden;
 }
 
-.pic_list .goods_box dd .goods_title a:hover{
+.goods_box dd .goods_title a:hover {
     color: #e84118;
 }
+
+/* --------------------品牌活动区 */
 .pic_list2 {
     margin: 0 6px 0 12px;
 }
@@ -110,23 +106,38 @@
 }
 
 .pic_list2 li {
-    width: 177px;
-    float: left;
+    width: 174px;
+    display: inline-block;
     margin: 5px 4px;
 }
 
-
-.Show_main .right{
+/* ---------------------主体右部区域 */
+.Show_main .right {
     margin-top: 15px;
     width: 180px;
+    position: relative;
 }
-.Show_main .hot_title{
+
+@media screen and (max-width:1200px) {
+    .Show_main {
+        width: 1010px;
+    }
+
+    .Show_main .max1200 {
+        display: none;
+    }
+    #go-top{
+        margin-right: -50px;
+    }
+}
+
+.hot_title {
     position: relative;
     color: #ccc;
     text-align: center;
 }
 
-.Show_main .hot_title::before{
+.hot_title::before {
     content: "";
     display: block;
     width: 50px;
@@ -138,7 +149,7 @@
 
 }
 
-.Show_main .hot_title::after{
+.hot_title::after {
     content: "";
     display: block;
     width: 50px;
@@ -150,7 +161,7 @@
 }
 
 
-.Show_main .hot_list li{
+.hot_list li {
     width: 130px;
     height: 150px;
     margin-top: 20px;
@@ -159,16 +170,58 @@
 }
 
 
-.Show_main .hot_list li img{
+.hot_list li img {
     margin-left: 14px;
     width: 100%;
     height: 130px;
 }
-.Show_main .hot_list li p{
+
+.hot_list li p {
     position: absolute;
     bottom: 20px;
     left: 14px;
     width: 100%;
     height: 20px;
-    background-color: rgb(204, 204, 204,.3);
+    background-color: rgb(204, 204, 204, .3);
+}
+
+/* ---------------锚点区域 */
+
+.arrow{
+    border: 9px solid transparent;
+    border-bottom-color: #3DA0DB;
+    width: 0px;
+    height: 0px;
+    top:0px
+}
+.stick{
+    width: 8px;
+    height: 14px;
+    border-radius: 1px;
+    background-color: #3DA0DB;
+    top:15px;
+}
+#go-top div{
+    position: absolute;
+    margin: auto;
+    right: 0px;
+    left: 0px;
+}
+#go-top{
+    background-color: #dddddd;
+    height: 38px;
+    width: 38px;
+    border-radius: 3px;
+    display: block;
+    cursor: pointer;
+    position: fixed;
+    right: 50px;
+    bottom: 100px;
+    display: none;
+}
+
+@media screen and (max-width:1069px){
+    #go-top{
+        display: none !important;
+    }
 }
