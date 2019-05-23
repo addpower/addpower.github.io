@@ -1,7 +1,7 @@
 /*
  * @Author: 李浩栋
  * @Begin: 2019-05-11 10:53:39
- * @Update: 2019-05-13 08:05:57
+ * @Update: 2019-05-23 19:43:43
  * @Update log: 更新日志
  */
 /**
@@ -53,7 +53,7 @@ $.ajax({
                     fiveImg = this.smallImg[3];
 
 
-                
+
                 // 遍历图片  添加到页面中
                 var imgSum = [],
                     flag = 0,
@@ -81,8 +81,8 @@ $.ajax({
                             <div class="right_pic">
                                 <img src="${imgSum[0].src}" alt="">
                             </div>`)
+
                             
-                            // 加载完成后添加显示细节函数方法
                             $('body').append(`<script src="./js/showImgDetail.js"></script>`)
                         }
                     }
