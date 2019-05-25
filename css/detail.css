@@ -1,7 +1,7 @@
 /*
  * @Author: 李浩栋
  * @Begin: 2019-04-07 20:56:26
- * @Update: 2019-05-23 20:02:16
+ * @Update: 2019-05-25 19:00:27
  * @Update log: 更新日志
  */
 
@@ -246,7 +246,8 @@
     top: 0;
 }
 
-.middle .right .mon .sum-com a {
+.middle .right .mon .sum-com a,
+.middle .right .mon .sum-shop a {
     display: block;
     font-size: 16px;
     text-align: center;
@@ -261,12 +262,8 @@
     width: 48px;
     height: 42px;
     margin-left: 8px;
-}
-
-.middle .right .mon .sum-shop span {
-    display: block;
     color: #6c6c6c;
-    text-align: center;
+
 }
 
 .middle .right .dil {
@@ -281,6 +278,7 @@
 .middle .right .dil .address {
     display: inline;
 }
+
 .middle .right .dil .dil-mon .express::after,
 .middle .right .dil .address .target::after {
     content: "";
@@ -410,6 +408,7 @@
 .middle .right .size .sizeDetail li {
     cursor: pointer;
     display: inline-block;
+    margin-right: 6px;
     margin-top: 11px;
     padding: 5px;
     height: 14px;
@@ -419,6 +418,7 @@
     color: #999;
     border: 2px solid #ccc;
     transition-duration: 0.2s;
+
 }
 
 .middle .right .color .colorDetail li {

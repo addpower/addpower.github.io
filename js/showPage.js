@@ -1,9 +1,10 @@
 /*
  * @Author: 李浩栋
  * @Begin: 2019-05-11 10:53:39
- * @Update: 2019-05-23 19:43:43
- * @Update log: 更新日志
+ * @Update: 2019-05-25 19:16:14
+ * @Update log: 添加详情页信息的动态更新，调取后台数据
  */
+
 /**
  * 实现思路
  * 
@@ -26,23 +27,7 @@ $.ajax({
 
         $.each(dataSum, function (index, ele) {
             if (ele.id == id) {
-                /**
-                 * buyNum: "749"
-                    href: "shoppingDetail.html"
-                    id: "01"
-                    location: "show"
-                    price: "88.00"
-                    smallImg: Array(4)
-                    0: {two: "https://gd1.alicdn.com/imgextra/i1/2734761526/O1CN011N8wqMMtHMK4hZ9_!!2734761526.jpg_50x50.jpg_.webp"}
-                    1: {three: "https://gd1.alicdn.com/imgextra/i1/2734761526/O1CN011N8wqN4v6nzUF7l_!!2734761526.jpg_50x50.jpg_.webp"}
-                    2: {four: "https://gd1.alicdn.com/imgextra/i1/2734761526/O1CN011N8wqOEvVLPXXL6_!!2734761526.jpg_50x50.jpg_.webp"}
-                    3: {five: "https://gd4.alicdn.com/imgextra/i4/2734761526/O1CN011N8wqOEupnNPgjz_!!2734761526.jpg_50x50.jpg_.webp"}
-                    length: 4
-                    __proto__: Array(0)
-                    src: "https://gd4.alicdn.com/imgextra/i2/2734761526/O1CN011N8wqNo5YtK2Vsz_!!2734761526.jpg_400x400.jpg"
-                    title: "ins复古衬衫男ulzzangbf原宿风港风韩版潮流宽松韩风chic外套学生"
-                    __proto__: Object
-                 */
+
                 var title = this.title,
                     lastPrice = this.lastPrice,
                     price = this.price,
@@ -50,9 +35,10 @@ $.ajax({
                     twoImg = this.smallImg[0],
                     threeImg = this.smallImg[1],
                     fourImg = this.smallImg[2],
-                    fiveImg = this.smallImg[3];
-
-
+                    fiveImg = this.smallImg[3],
+                    commentsSum = this.commentsSum,
+                    transactionSum = this.transactionSum,
+                    originPlace = this.originPlace;
 
                 // 遍历图片  添加到页面中
                 var imgSum = [],
@@ -81,11 +67,25 @@ $.ajax({
                             <div class="right_pic">
                                 <img src="${imgSum[0].src}" alt="">
                             </div>`)
-
-                            
                             $('body').append(`<script src="./js/showImgDetail.js"></script>`)
                         }
                     }
+                }
+
+                // 遍历尺寸  添加到页面
+                var sizeStr = "",
+                    colorStr = "",
+                    sizeArr = ele.sizeSum,
+                    colorArr = ele.colorSum,
+                    colorLen = colorArr.length,
+                    sizeLen = sizeArr.length;
+
+                for (var i = 0; i < sizeLen; i++) {
+                    sizeStr += `<li data-price=${sizeArr[i].price} data-quantity=${sizeArr[i].quantity} >${sizeArr[i].specs}</li>`;
+                }
+
+                for (var i = 0; i < colorLen; i++) {
+                    colorStr += `<li>${colorArr[i]}</li>`
                 }
 
                 // 添加商品标题
@@ -94,6 +94,17 @@ $.ajax({
                 $('#lastmoney').text(lastPrice);
                 // 添加商品优惠后的价格
                 $('#nowmoney').text(price);
+                // 添加商品尺寸规格
+                $('ul.sizeDetail').html(sizeStr);
+                // 添加商品颜色模块
+                $('ul.colorDetail').html(colorStr);
+                // 添加商品交易总数
+                $('#transactionSum').html(transactionSum);
+                // 添加商品评价总数
+                $('#commentsSum').html(commentsSum);
+                // 添加商品发货地
+                $('.origin').text(originPlace);
+
             }
         })
 

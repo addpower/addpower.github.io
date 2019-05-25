@@ -1,7 +1,7 @@
 /*
  * @Author: 李浩栋
  * @Begin: 2019-04-20 10:47:20
- * @Update: 2019-05-13 08:05:39
+ * @Update: 2019-05-25 19:36:11
  * @Update log: 更新日志
  */
 
@@ -10,19 +10,22 @@
  * @param {type} 
  * @return: 
  */
+
 $(function () {
-    
     /**
      * 尺码颜色选择
+     * 实时更新库存和当前价格
      */
     var select = {
         init: function () {
             this.selectGoods();
         },
         selectGoods: function () {
-            $('.colorDetail li').add($('.sizeDetail li')).click(function () {
+            $('.colorDetail').add($('.sizeDetail')).on('click','li',function () {
                 $(this).siblings().removeClass('on');
                 $(this).addClass('on');
+                $('#quantity').html($(this).attr('data-quantity'));
+                $('#nowmoney').html($(this).attr('data-price'));
             })
         }
     }
@@ -49,11 +52,11 @@ $(function () {
                     if (nowNum == 1) {
                         return;
                     } else {
-                        nowNum--;
+                        --nowNum;
                         $('.sumNum .number').val(nowNum);
                     }
                 } else {
-                    nowNum++;
+                    ++nowNum;
                     $('.sumNum .number').val(nowNum);
                 }
             })
