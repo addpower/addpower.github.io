@@ -1,10 +1,12 @@
 /*
  * @Author: 李浩栋
  * @Begin: 2019-04-07 20:56:26
- * @Update: 2019-05-13 09:45:30
+ * @Update: 2019-06-07 13:56:32
  * @Update log: 更新日志
  */
 
+@import "https://at.alicdn.com/t/font_1232202_bjil53l9bl.css";
+ 
 /* --------------------------------------------------顶部导航条区域 */
 
 .top_nav_father {
@@ -141,4 +143,15 @@
 .top_nav_father .zi.zi_shoppingcart{
     color: #f40;
     font-size: 1.3rem;
+}
+
+
+i.icondown{
+    color: #999;
+    vertical-align: -1px;
+}
+
+i.iconhtmal5icon29,
+i.iconstar{
+    color: #f40;
 }

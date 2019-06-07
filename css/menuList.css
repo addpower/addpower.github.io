@@ -1,9 +1,11 @@
 /*
  * @Author: 李浩栋
  * @Begin: 2019-04-20 09:14:12
- * @Update: 2019-05-13 09:45:51
- * @Update log: 更新日志
+ * @Update: 2019-06-07 13:50:56
+ * @Update log: 更新菜单列表切换样式
+                改为通过类名控制当前显示的列表项
  */
+ @import "https://at.alicdn.com/t/font_1232202_bjil53l9bl.css";
 
 .menu {
     /* 宽度撑开 */
@@ -18,6 +20,17 @@
     position: relative;
 }
 
+.menu .menu_list.active .iconxiasanjiao{
+    transform: rotateZ(0deg);
+}
+.menu .menu_list li .iconxiasanjiao{
+    position: absolute;
+    right: 5px;
+    color: #fff;
+    transform: rotateZ(-90deg);
+    transform-origin: 23px 17px;
+    transition: .3s;
+}
 .menu .menu_list li a {
     /* 设置a标签宽度高度撑满更好的点击*/
     box-sizing: border-box;
@@ -27,7 +40,14 @@
     height: 100%;
     padding: 0 0 0 30px;
 }
+.menu .menu_list .red_dot{
+    position: relative;
+    display: none;
+}
 
+.menu .menu_list.active .red_dot{
+    display: block;
+}
 .menu .menu_list .red_dot a::before {
     /* 列表前的小红点 */
     content: "";
@@ -41,18 +61,11 @@
     background-color: red;
 }
 
-.menu .menu_list .red_dot a::after {
-    /* 列表后的小箭头 */
-    content: "";
+.menu .menu_list .iconiconfonticonfonti2copycopy{
+    font-size: 12px;
+    color: #666;
     position: absolute;
     right: 8px;
-    top: 50%;
-    margin-top: -7px;
-    width: 15px;
-    height: 15px;
-    background-image: url('../images/右.png');
-    background-size: 100%;
-    background-repeat: no-repeat;
 }
 
 .menu .menu_list .title {
@@ -67,64 +80,6 @@
     font-family: '微软雅黑';
     text-indent: 1em;
     cursor: pointer;
-}
-
-.menu .menu_list .right {
-    /* 菜单在关闭状态下的标题右边箭头样式 */
-    position: absolute;
-    right: 8px;
-    top: 50%;
-    margin-top: -9px;
-    width: 14px;
-    height: 18px;
-    background-image: url('../images/right.png');
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    transform: rotateZ(0deg);
-    -ms-transform: rotateZ(0deg);
-    /* IE 9 */
-    -moz-transform: rotateZ(0deg);
-    /* Firefox */
-    -webkit-transform: rotateZ(0deg);
-    /* Safari 和 Chrome */
-    -o-transform: rotateZ(0deg);
-    /* Opera */
-    transition: 0.3s;
-    -moz-transition: 0.3s;
-    /* Firefox 4 */
-    -webkit-transition: 0.3s;
-    /* Safari 和 Chrome */
-    -o-transition: 0.3s;
-    /* Opera */
-}
-
-.menu .menu_list .down {
-    /* 菜单在打开状态下的标题右边箭头样式 */
-    position: absolute;
-    right: 8px;
-    top: 50%;
-    margin-top: -7px;
-    width: 18px;
-    height: 14px;
-    background-image: url('../images/right.png');
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    transform: rotateZ(90deg);
-    -ms-transform: rotateZ(90deg);
-    /* IE 9 */
-    -moz-transform: rotateZ(90deg);
-    /* Firefox */
-    -webkit-transform: rotateZ(90deg);
-    /* Safari 和 Chrome */
-    -o-transform: rotateZ(90deg);
-    /* Opera */
-    transition: 0.3s;
-    -moz-transition: 0.3s;
-    /* Firefox 4 */
-    -webkit-transition: 0.3s;
-    /* Safari 和 Chrome */
-    -o-transition: 0.3s;
-    /* Opera */
 }
 
 .menu .menu_list .red_dot {

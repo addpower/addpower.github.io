@@ -1,9 +1,10 @@
 /*
  * @Author: 李浩栋
  * @Begin: 2019-04-07 20:56:26
- * @Update: 2019-05-13 19:54:07
+ * @Update: 2019-06-07 14:03:38
  * @Update log: 更新日志
  */
+@import "https://at.alicdn.com/t/font_1232202_bjil53l9bl.css";
 
 .index_main {   
     /* 首页居中 */
@@ -128,7 +129,8 @@
     background-color: #e76838;
 }
 
-a .zi{
+a.next .iconfont,
+a.prev .iconfont{
     color: rgba(0,0,0,0.7);
     font-size: 30px;
 }

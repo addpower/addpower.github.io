@@ -1,7 +1,7 @@
 <!--
  * @Author: 李浩栋
  * @Begin: 2019-04-07 20:56:26
- * @Update: 2019-05-29 18:32:33
+ * @Update: 2019-06-07 14:13:30
  * @Update log: 减去固定的html内容，通过js动态添加更新
  -->
 
@@ -25,7 +25,6 @@
     <link rel="stylesheet" href="css/login.css"> -->
     <link rel="stylesheet" href="./out/css/common.css">
     <link rel="stylesheet" href="./out/css/detail.css">
-    <link rel="stylesheet" href="https://ico.z01.com/zico.min.css">
     <!--[if IE]>
     <script>
         document.createElement("header");
@@ -43,7 +42,7 @@
             <ul class="nav_left left">
                 <li class="nav china">
                     <span class="china">中国大陆</span>
-                    <i class="zi zi_forDown"></i>
+                    <i class="iconfont icondown"></i>
                 </li>
                 <li class="nav login">
                     <a href="javascript:;" class="login" onclick="">亲，请登录</a>
@@ -56,9 +55,9 @@
             <ul class="nav_right right">
                 <li class="nav-shopcar">
                     <a href="#">
-                        <i class="zi zi_shoppingcart" zico="购物车黑"></i> 我的购物车
+                        <i class="iconfont iconhtmal5icon29" ></i> 我的购物车
                         <span class="shop_car_num">0</span>件
-                        <i class="zi zi_forDown"></i>
+                        <i class="iconfont icondown"></i>
                     </a>
                     <!-- 购物车内详情 -->
                     <div class="shop_car_content">
@@ -68,13 +67,13 @@
                 </li>
                 <li class="nav">
                     <a href="#">
-                        <i class="zi zi_starLine" zico="五角星细线"></i> 收藏夹
-                        <i class="zi zi_forDown"></i>
+                        <i class="iconfont iconstar"></i> 收藏夹
+                        <i class="iconfont icondown"></i>
                     </a>
                 </li>
                 <li class="nav">
                     <a href="#">联系客服</a>
-                    <i class="zi zi_forDown"></i>
+                    <i class="iconfont icondown"></i>
                 </li>
             </ul>
         </div>
@@ -82,17 +81,18 @@
     <!-- 顶部区域 end -->
     <!-- logo 和 banner start -->
     <div class="logo">
-        <div class="logo_container">
-            <div class="logo_img">
-                <a href="./index.html">
-                    <img src="./images/logo.png" alt="">
-                </a>
-            </div>
-            <div class="logo_banner">
-                <img src="./images/header1.jpg" width="1190px" height="66px" style="opacity: 0.4;" alt="">
+            <div class="logo_container">
+                <div class="logo_img">
+                    <a href="./index.html">
+                        <img src="./images/logo.png" alt="">
+                    </a>
+                </div>
+                <div class="search">
+                        <input type="text"class="search-input" id="search-input" placeholder="请输入关键字">
+                        <button class="search-btn" id="search-btn">搜索</button>
+                </div>
             </div>
         </div>
-    </div>
     <!-- logo 和 banner end -->
     <!-- 菜单导航 start -->
     <div class="nav_bg">
@@ -114,28 +114,28 @@
         <!-- 购物分类 start -->
         <div class="left">
             <div class="menu">
-                <ul class="menu_list girlTitle">
-                    <li><span class="block title">女装</span><i class="down"></i></li>
-                    <li class="red_dot block"><a href="#">上衣</a></li>
-                    <li class="red_dot block"><a href="#">下装</a></li>
-                    <li class="red_dot block"><a href="#">连衣裙</a></li>
-                    <li class="red_dot block"><a href="#">内衣</a></li>
+                <ul class="menu_list girlTitle active">
+                    <li><span class="block title">女装<i class="iconfont iconxiasanjiao"></i></span></li>
+                    <li class="red_dot"><a href="#">上衣<i class="iconfont iconiconfonticonfonti2copycopy"></i></a></li>
+                    <li class="red_dot"><a href="#">下装<i class="iconfont iconiconfonticonfonti2copycopy"></i></a></li>
+                    <li class="red_dot"><a href="#">连衣裙<i class="iconfont iconiconfonticonfonti2copycopy"></i></a></li>
+                    <li class="red_dot"><a href="#">内衣<i class="iconfont iconiconfonticonfonti2copycopy"></i></a></li>
                 </ul>
                 <ul class="menu_list manTitle">
-                    <li><span class="block title">男装</span><i class="right"></i></li>
-                    <li class="red_dot"><a href="#">T恤</a></li>
-                    <li class="red_dot"><a href="#">短裤</a></li>
-                    <li class="red_dot"><a href="#">衬衫</a></li>
+                    <li><span class="block title">男装<i class="iconfont iconxiasanjiao"></i></span></li>
+                    <li class="red_dot"><a href="#">T恤<i class="iconfont iconiconfonticonfonti2copycopy"></i></a></li>
+                    <li class="red_dot"><a href="#">短裤<i class="iconfont iconiconfonticonfonti2copycopy"></i></a></li>
+                    <li class="red_dot"><a href="#">衬衫<i class="iconfont iconiconfonticonfonti2copycopy"></i></a></li>
                 </ul>
                 <ul class="menu_list childTitle">
-                    <li><span class="block title">童装</span><i class="right"></i></li>
-                    <li class="red_dot"><a href="#">上衣</a></li>
-                    <li class="red_dot"><a href="#">裤子</a></li>
+                    <li><span class="block title">童装<i class="iconfont iconxiasanjiao"></i></span></li>
+                    <li class="red_dot"><a href="#">上衣<i class="iconfont iconiconfonticonfonti2copycopy"></i></a></li>
+                    <li class="red_dot"><a href="#">裤子<i class="iconfont iconiconfonticonfonti2copycopy"></i></a></li>
                 </ul>
                 <ul class="menu_list runTitle">
-                    <li><span class="block title">运动</span><i class="right"></i></li>
-                    <li class="red_dot"><a href="#">运动裤</a></li>
-                    <li class="red_dot"><a href="#">跑步鞋</a></li>
+                    <li><span class="block title">运动<i class="iconfont iconxiasanjiao"></i></span></li>
+                    <li class="red_dot"><a href="#">运动裤<i class="iconfont iconiconfonticonfonti2copycopy"></i></a></li>
+                    <li class="red_dot"><a href="#">跑步鞋<i class="iconfont iconiconfonticonfonti2copycopy"></i></a></li>
                 </ul>
             </div>
         </div>
@@ -433,7 +433,7 @@
         <div class="footer_list">
             <div class="list">
                 <ul>
-                    <li><span class="font16 padding-bottom"><i class="zi zi_digg" zico="点赞"></i>新手引导</span></li>
+                    <li><span class="font16 padding-bottom"><i class="iconfont iconxinshouzhinan"></i>新手引导</span></li>
                     <li>用户注册</li>
                     <li>电话下单</li>
                     <li>购物流程</li>
@@ -443,7 +443,7 @@
             </div>
             <div class="list">
                 <ul>
-                    <li><span class="font16 padding-bottom"><i class="zi zi_database"></i>支付方式 </span></li>
+                    <li><span class="font16 padding-bottom"><i class="iconfont iconicon1"></i>支付方式 </span></li>
                     <li>货到付款</li>
                     <li>商城卡支付</li>
                     <li>支付宝 网银支付</li>
@@ -452,7 +452,7 @@
             </div>
             <div class="list">
                 <ul>
-                    <li><span class="font16 padding-bottom"><i class="zi zi_dove" zico="和平鸽"></i>配送方式 </span></li>
+                    <li><span class="font16 padding-bottom"><i class="iconfont iconpeisongguanli" ></i>配送方式 </span></li>
                     <li>闪电发货</li>
                     <li>满百包邮</li>
                     <li>配送范围及时间</li>
@@ -462,8 +462,7 @@
             </div>
             <div class="list">
                 <ul>
-                    <li><span class="font16 padding-bottom"><i class="zi zi_handshelping" zico="手势帮助"></i>售后服务 </span>
-                    </li>
+                    <li><span class="font16 padding-bottom"><i class="iconfont iconshouhoufuwu" ></i>售后服务 </span></li>
                     <li>退换货协议</li>
                     <li>关于发货</li>
                     <li>退换货流程</li>
@@ -472,7 +471,7 @@
             </div>
             <div class="list">
                 <ul>
-                    <li><span class="font16 padding-bottom"><i class="zi zi_idcardBold"></i>关于账号 </span></li>
+                    <li><span class="font16 padding-bottom"><i class="iconfont iconiconzh1"></i>关于账号 </span></li>
                     <li>修改个人信息</li>
                     <li>修改密码</li>
                     <li>找回密码</li>
@@ -480,7 +479,7 @@
             </div>
             <div class="list">
                 <ul>
-                    <li><span class="font16 padding-bottom"><i class="zi zi_heartbeat"></i>优惠活动 </span></li>
+                    <li><span class="font16 padding-bottom"><i class="iconfont iconyouhuiquan"></i>优惠活动 </span></li>
                     <li>竞拍须知</li>
                     <li>抢购须知</li>
                 </ul>

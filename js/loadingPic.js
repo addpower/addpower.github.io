@@ -1,7 +1,7 @@
 /*
  * @Author: 李浩栋
  * @Begin: 2019-05-11 09:28:06
- * @Update: 2019-05-13 08:10:44
+ * @Update: 2019-05-29 09:49:38
  * @Update log: 更新日志
  */
 
@@ -107,7 +107,7 @@ $(function () {
 
     function endThis() {
 
-        console.log('end');
+        // console.log('end');
         
     }
 

@@ -1,38 +1,74 @@
 /*
  * @Author: 李浩栋
  * @Begin: 2019-04-07 20:56:26
- * @Update: 2019-05-13 19:47:51
+ * @Update: 2019-06-04 18:58:06
  * @Update log: 更新日志
  */
 
-.logo{
+.logo {
     width: 100%;
     height: 66px;
     /* border: 1px solid #000; */
-    background: linear-gradient(to bottom,  #E89B86 0%,rgb(255, 142, 142) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#E89B86', endColorstr='#EA9E89',GradientType=0 );
+    /* background: linear-gradient(to bottom,  #E89B86 0%,rgb(255, 142, 142) 100%); */
+    /* filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#E89B86', endColorstr='#EA9E89',GradientType=0 ); */
 }
 
-.logo .logo_container{
+.logo .logo_container {
     position: relative;
     width: 1190px;
     height: 100%;
     margin: 0 auto;
 }
 
-.logo .logo_container .logo_img{
+.logo .logo_container .logo_img {
+    position: absolute;
+    left: 10px;
     width: 66px;
     height: 66px;
-      
 }
 
-.logo .logo_container .logo_img img{
+.logo .logo_container .logo_img img {
     width: 100%;
     height: 100%;
 }
 
-.logo .logo_banner{
+.logo .logo_banner {
     position: absolute;
     top: 0;
     right: 0;
+}
+
+.logo .search {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 800px;
+    height: 50px;
+    padding-top: 10px;
+}
+
+.search .search-input{
+    width: 660px;
+    height: 40px;
+    outline: none;
+    border: 2px solid #f40;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    font-size: 18px;
+    text-indent: 1em;
+}
+
+.search .search-btn{
+    vertical-align: 0.5px;
+    width: 108px;
+    height: 44.5px;
+    margin-left: -5px;
+    background-color: #f40;
+    color: #fff;
+    outline: none;
+    border: none;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    font-size: 18px;
+    font-weight: 700;
 }

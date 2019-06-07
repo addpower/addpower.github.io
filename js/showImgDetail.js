@@ -1,7 +1,7 @@
 /*
  * @Author: 李浩栋
  * @Begin: 2019-05-11 11:59:37
- * @Update: 2019-05-23 20:10:27
+ * @Update: 2019-05-29 09:10:14
  * @Update log: 火狐浏览器的mouseout不能实现功能，改用mouseleave
  */
 
@@ -12,7 +12,6 @@ var showDetail = {
     init: function () {
         this.toggleImg();
         this.showImg();
-
     },
     /**
      * 选择小图片  切换大图片
