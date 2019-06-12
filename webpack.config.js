@@ -21,10 +21,9 @@ module.exports = {
         publicPath: 'http://localhost:8080/out'
     },
     devServer: {
-        contentBase: path.join(__dirname, "out"),
         // 一切服务都启用gzip 压缩：
         compress: true,
-        host: "127.99.06.08",
+        host: "127.168.0.1",
         // 启动https请求
         // https: true,
         open: true,
