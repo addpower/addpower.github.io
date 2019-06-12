@@ -1,7 +1,7 @@
 /*
  * @Author: 李浩栋
  * @Begin: 2019-06-04 18:59:05
- * @Update: 2019-06-04 19:43:49
+ * @Update: 2019-06-07 15:08:23
  * @Update log: 增加搜索框
  * 
  * 首页进行搜索
@@ -16,8 +16,6 @@ var searchEvent = {
     getValue:function(){
         var _this = this;
         $('#search-btn').click(function(){
-            console.log(12);
-            
             _this.searchValue();
         })
         $('#search-input').keyup(function (e) { 
